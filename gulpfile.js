@@ -16,10 +16,17 @@ var gulp = require('gulp'),
     htmlreplace = require('gulp-html-replace'),
     minhtml = require('gulp-minify-html'),
     streamqueue = require('streamqueue'),
+    handlebars = require('gulp-compile-handlebars'),
+    rename = require('gulp-rename'),
+    debug = require('gulp-debug'),
+    fs = require('fs'),
     config;
+
 
 config = {
 	js: 'src/event/js/main.js',
+  events: 'src/events.json',
+  hbs:'src/templates/*.hbs',
   css: [
     'src/event/css/**/*.css',
     '!src/event/css/style.css'
@@ -34,6 +41,28 @@ config = {
     css: 'build/css'
   }
 };
+
+gulp.task('handlebars', function() { 
+    var options = {
+      helpers : {
+    		helperMissing : function(){
+    			var options = arguments[arguments.length - 1];
+          console.warn('handelbars missing: ' + options.name);
+    		}
+    	}
+    }
+    
+    var events = JSON.parse(fs.readFileSync(config.events));
+    for(var i=0; i<events.length; i++) {
+        var evt = events[i],
+            dirName = evt.date;
+        gulp.src('src/templates/event.template.hbs')
+            .pipe(handlebars(evt,options))
+            .pipe(rename("index.html"))
+            .pipe(gulp.dest('./src/event/warsztaty/'+dirName))
+            .pipe(debug({title: 'created:'}));
+    }
+});
 
 gulp.task('jshint', function () {
 	gulp.src(config.js)
@@ -143,9 +172,11 @@ gulp.task('dist-connect', function() {
     }));
 });
 
-gulp.task('dev', ['dev-connect', 'jshint'], function () {
+gulp.task('dev', ['dev-connect', 'handlebars', 'jshint'], function () {
 
   gulp.watch(config.js, ['jshint']);
+  gulp.watch(config.hbs, ['handlebars']);
+  gulp.watch(config.events, ['handlebars']);
 
 });
 
