@@ -183,6 +183,7 @@ gulp.task('dev', ['dev-connect', 'handlebars', 'jshint'], function () {
 gulp.task('default', ['dev']);	
 
 gulp.task('dist', ['dist-clean' ], function () {
+  gulp.start('handlebars');
   gulp.start('dist-images', 'dist-js', 'dist-css', 'dist-html', 'dist-font');
 
 });  
