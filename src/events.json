@@ -6,7 +6,7 @@
         "date-date-month_long":"4 czerwca",
         "date-year":"bieżący rok :)",
 
-        "description-short":"to jest krótki opis",
+        "description-short":"Na warsztatach wgłębimy się w temat pamięci w środowisku .NET. Nie ważne czy już coś na ten temat wiesz, czy nie - celem jest by każdy wychodząc z warsztatów miał szeroki i jasny obraz jak to wszystko działa pod spodem.",
         "description-long-html":"Na warsztatach wgłębimy się w temat pamięci w środowisku .NET. Nie ważne czy już coś na ten temat wiesz, czy nie - celem jest by każdy wychodząc z warsztatów miał szeroki i jasny obraz jak to wszystko działa \"pod spodem\". Oraz potrafił w praktyce przeanalizować problemy z pamięcią w swojej aplikacji. Zaczniemy zatem od teorii, by następnie dotknąć jej w praktyce za pomocą narzędzi takich jak Visual Studio czy jetBrains dotMemory. Nie będzie jedynie suchej teorii, ani jedynie mozolnego powielania, bez zrozumienia, tego co wykonuje prelegent. Co więcej, mocno ubrudzimy sobie ręce w WinDbg i... odtąd nic nie będzie już takie samo! Pojęcia takie jak generacje, segmenty, Garbage Collector i finalizator przestaną być jedynie mglistymi hasłami. Nauczymy się zarówno analizy problemów na środowiskach developerskich, jak i dopiero \"na produkcji\".",
 
         "speaker-name":"Konrad Kokosa",
@@ -25,13 +25,13 @@
         "seat-count":"25",
         "agenta-html":"<p>Godziny 9:00 - 17:00</p><p>Na szkoleniu poruszymy kompleksowo temat pamięci w środowisku .NET:</p><ul><li>teoretyczny wstęp do tematu</li><li>poznanie narzędzi: Visual Studio, jetBrains dotMemory - narzędzi prostych i przyjemnych acz nie zawsze wystarczających</li><li>poznanie WinDbg - niskopoziomowego narzędzi, którym dotkniemy żywy organizm</li><li>poznanie kilku innych, pomocniczych narzędzi, m.in.: procdump, DebugDiag, VMMap</li><li>zastosowanie teorii i poznanych narzędzi do analizy konkretnych, specjalnie spreparowanych problemów i sytuacji - .NETowych aplikacji webowych i okienkowych</li></ul>",
         
-        "sponsor-name":"Bank Milenium",
+        "sponsor-name":"Bank Millennium",
         "sponsor-url":"http://www.bankmillennium.pl",
         "sponsors":[
-            {"name":"Bank Milenium","url":"http://www.bankmillennium.pl", "img":"/images/sponsors/millenium-logo.png"},
+            {"name":"Bank Millennium","url":"http://www.bankmillennium.pl", "img":"/images/sponsors/millenium-logo.png"},
             {"name":"JetBrains","url":"http://jetbrains.com", "img":"/images/sponsors/jetbrains-logo.png"}
         ],
         
-        "meetup-register-url" : "http://www.meetup.com/devWarsztaty/"
+        "meetup-register-url" : "http://www.meetup.com/devWarsztaty/events/231345610/"
     }
 ]
