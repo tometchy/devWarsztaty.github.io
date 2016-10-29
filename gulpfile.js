@@ -48,7 +48,10 @@ gulp.task('handlebars', function() {
     		helperMissing : function(){
     			var options = arguments[arguments.length - 1];
           console.warn('handelbars missing: ' + options.name);
-    		}
+    		},
+        eq: function(elem1, elem2){
+          return elem1==elem2;
+        }
     	}
     }
     
