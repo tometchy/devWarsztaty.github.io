@@ -8,7 +8,7 @@
 
 <meta name="description" content="{{title}} - {{description-short}}">
 
-<meta property="og:image" content="http://devWarsztaty.pl/images/speakers/{{speaker-img}}">
+<meta property="og:image" content="http://devWarsztaty.pl/images/speakers/{{logo-img}}">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:type" content="website">
 <meta property="og:title" content="devWarsztaty - {{number}} - {{title}}">
@@ -24,7 +24,7 @@
 <meta name="twitter:site" content="@devWarsztaty">
 <meta name="twitter:creator" content="@devWarsztaty">
 <meta name="twitter:domain" content="devWarsztaty">
-<meta name="twitter:image:src" content="http://devWarsztaty.pl/images/speakers/{{speaker-img}}">
+<meta name="twitter:image:src" content="http://devWarsztaty.pl/images/speakers/{{logo-img}}">
 
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -161,7 +161,11 @@
 						<div class="event-info">
 							<div class="icon fa fa-microphone"></div>
 							<div class="info">
-								<h3>{{speaker-name}}</h3>
+								{{#each speakers}}
+								<h3>
+										{{speaker-name}}&nbsp;	
+								</h3>
+								{{/each}}
 								<!-- <span></span> -->
 							</div>
 						</div>
@@ -231,28 +235,35 @@
 				<section id="speakers" class="row separated">
 					<div class="col-sm-12">
 						<div class="section-header text-center">
-							<h2>Prelegent</h2>
-							<h4>Nasz  wykładowca ;)</h4>
+
+							{{#if (eq speakers.length 1)}}
+								<h2>Prelegent</h2>
+							{{else}}
+								<h2>Prelegenci</h2>
+							{{/if}}
+							
 						</div>
 					</div>
 					<div class="col-sm-12">
-						<div class="speaker">
-							<div class="speaker-info">
-								<div class="speaker-photo">
-									<img src="/images/speakers/{{speaker-img}}" alt="{{speaker-name}}">
-								</div>								
-								<div class="speaker-contacts">
-								  {{#each speaker-contact}}
-									<a href="{{this.url}}" target="_blank" class="contact pull-{{this.direction}} fa fa-{{this.icon}}"></a>
-								  {{/each}}
+						{{#each speakers}}
+							<div class="speaker">
+								<div class="speaker-info">
+									<div class="speaker-photo">
+										<img src="/images/speakers/{{speaker-img}}" alt="{{speaker-name}}">
+									</div>								
+									<div class="speaker-contacts">
+									{{#each speaker-contact}}
+										<a href="{{this.url}}" target="_blank" class="contact pull-{{this.direction}} fa fa-{{this.icon}}"></a>
+									{{/each}}
+									</div>
 								</div>
+								<h3><a href="/prelegenci/{{speaker-link}}/">{{speaker-name}}</a></h3>
+								{{{speaker-short-description-html}}}
+								<p>
+								<a href="/prelegenci/{{speaker-link}}/">więcej...</a>
+								</p>
 							</div>
-							<h3><a href="/prelegenci/{{speaker-link}}/">{{speaker-name}}</a></h3>
-							{{{speaker-short-description-html}}}
-							<p>
-							<a href="/prelegenci/{{speaker-link}}/">więcej...</a>
-							</p>
-						</div>
+						{{/each}}
 					</div>
 				</section>
 				<!--==========-->

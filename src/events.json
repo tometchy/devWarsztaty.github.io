@@ -1,37 +1,65 @@
 [
     {
-        "number":"06",
-        "title":"Pamięć w .NET - wszystko co chciałbyś wiedzieć",
-        "date": "2016-06-04",
-        "date-date-month_long":"4 czerwca",
-        "date-year":"bieżący rok :)",
-
-        "description-short":"to jest krótki opis",
-        "description-long-html":"Na warsztatach wgłębimy się w temat pamięci w środowisku .NET. Nie ważne czy już coś na ten temat wiesz, czy nie - celem jest by każdy wychodząc z warsztatów miał szeroki i jasny obraz jak to wszystko działa \"pod spodem\". Oraz potrafił w praktyce przeanalizować problemy z pamięcią w swojej aplikacji. Zaczniemy zatem od teorii, by następnie dotknąć jej w praktyce za pomocą narzędzi takich jak Visual Studio czy jetBrains dotMemory. Nie będzie jedynie suchej teorii, ani jedynie mozolnego powielania, bez zrozumienia, tego co wykonuje prelegent. Co więcej, mocno ubrudzimy sobie ręce w WinDbg i... odtąd nic nie będzie już takie samo! Pojęcia takie jak generacje, segmenty, Garbage Collector i finalizator przestaną być jedynie mglistymi hasłami. Nauczymy się zarówno analizy problemów na środowiskach developerskich, jak i dopiero \"na produkcji\".",
-
-        "speaker-name":"Konrad Kokosa",
-        "speaker-img":"konrad-kokosa.jpg",
-        "speaker-link":"konrad-kokosa",
-        "speaker-contact":[
-            {"url":"http://blog.kokosa.net/", "direction":"left","icon":"globe"},
-            {"url":"https://twitter.com/konradkokosa", "direction":"right","icon":"twitter"}
+        "number": "09",
+        "title": "Podstawy Symfony",
+        "logo-img": "09-phpsymfony.png",
+        "date": "2016-11-26",
+        "date-date-month_long": "26 listopada",
+        "date-year": "bieżący rok :)",
+        "description-short": "„Podstawy Symfony” to warsztaty przeznaczone dla osób zaczynających przygodę z Symfony. Piguła teorii i spora dawka praktyki gwarantowane.",
+        "description-long-html": "<p>W trakcie warsztatów chcemy pokazać jak można zacząć pisanie aplikacji w Symfony. Wykorzystamy wieloletnie doświadczenie w pracy przy dużej skali w sporym zespole, nabytą tam wiedzę oraz dobre praktyki. Opowiemy jak pisać dobry i wydajny, ale jednocześnie prosty i zrozumiały kod.</p><p>Nie zanudzimy nudną teorią! Po krótkim wstępie i przedstawieniu frameworka przejdziemy do budowania aplikacji. Przejdziemy przez wszystkie podstawowe elementy, a jak wystarczy nam czasu dodamy nieco zaawansowanej wiedzy ;-). Postaramy się tak przygotować materiały, żeby każdy mógł spokojnie wypróbować wszystko czy to na warsztatach czy po - jako wprawkę.</p><p>Warsztaty kierujemy do osób, które znają przynajmniej podstawy PHP, wykorzystują inne frameworki i chcą zobaczyć „o co tyle szumu” oraz osoby, które zaczęły już pracę z Symfony i chcą złapać nieco więcej praktycznej wiedzy.</p>",
+        "speakers": [
+            {
+                "speaker-name": "Dominik Gawryszewski",
+                "speaker-img": "dominik-gawryszewski.png",
+                "speaker-link": "dominik-gawryszewski",
+                "speaker-contact": [
+                    {
+                        "url": "https://twitter.com/domen1806",
+                        "direction": "right",
+                        "icon": "twitter"
+                    }
+                ],
+                "speaker-short-description-html": "<p>Swoją przygodę z programowaniem rozpoczął od razu od PHP i framework’a Symfony2. Jego motto życiowe brzmi: zawsze możesz zrobić coś lepiej.</p>"                
+            },
+            {
+                "speaker-name": "Krzysztof Jończyk",
+                "speaker-img": "krzysztof-jonczyk.png",
+                "speaker-link": "krzysztof-jonczyk",
+                "speaker-contact": [
+                    {
+                        "url": "http://jonczyk.me",
+                        "direction": "left",
+                        "icon": "globe"
+                    },
+                    {
+                        "url": "https://twitter.com/krzychjonczyk",
+                        "direction": "right",
+                        "icon": "twitter"
+                    }
+                ],
+                "speaker-short-description-html": "<p>Od ponad 7 lat związany z szeroko pojętym web developmentem. Fanatyk czystego kodu. Freak na punkcie produktywności i samorozwoju.</p>"                
+            }
         ],
-        "speaker-short-description-html":"<p>Wpierw fan C++, od ponad 8 lat zakochany w .NET, choć z ciekawością spoglądający na inne technologie.</p><p>Kiedyś głównie programista desktopowy, ostatnie lata webowy, mocno zainteresowany tematyką wydajności aplikacji oraz ogólnie pojętej architektury.</p>",
-        
-        "venue-city":"Warszawa",
-        "venue-address":"Bank Millennium, budynek główny (A), sala 5. Wejście przez recepcję.",
-        "venue-address-google-maps":"Bank Millennium, Stanisława Żaryna 2A, Warsaw, Poland",
-        
-        "seat-count":"25",
-        "agenta-html":"<p>Godziny 9:00 - 17:00</p><p>Na szkoleniu poruszymy kompleksowo temat pamięci w środowisku .NET:</p><ul><li>teoretyczny wstęp do tematu</li><li>poznanie narzędzi: Visual Studio, jetBrains dotMemory - narzędzi prostych i przyjemnych acz nie zawsze wystarczających</li><li>poznanie WinDbg - niskopoziomowego narzędzi, którym dotkniemy żywy organizm</li><li>poznanie kilku innych, pomocniczych narzędzi, m.in.: procdump, DebugDiag, VMMap</li><li>zastosowanie teorii i poznanych narzędzi do analizy konkretnych, specjalnie spreparowanych problemów i sytuacji - .NETowych aplikacji webowych i okienkowych</li></ul>",
-        
-        "sponsor-name":"Bank Milenium",
-        "sponsor-url":"http://www.bankmillennium.pl",
-        "sponsors":[
-            {"name":"Bank Milenium","url":"http://www.bankmillennium.pl", "img":"/images/sponsors/millenium-logo.png"},
-            {"name":"JetBrains","url":"http://jetbrains.com", "img":"/images/sponsors/jetbrains-logo.png"}
+        "venue-city": "Warszawa",
+        "venue-address": "mBank, Królewska 14",
+        "venue-address-google-maps": "mBank, Królewska 14, Warsaw, Poland",
+        "seat-count": "25",
+        "agenta-html": "<p>Godziny 10:00 - 15:00</p><p><ol><li>wstęp do Symfony</li><li>instalacja Symfony</li><li>kontroler/model/widok</li><li>struktura bazy banych, Doctrine</li><li>logowanie, FOSUserBundle</li><li>CRUD + formularze</li><li>wykorzystanie serwisów</li><li>————— na 6</li><li>eventy</li><li>komendy</li></ol><h2>Wymagania od uczestników</h2><ul><li>podstawowa znajomość PHP</li><li>PhpStorm (jest 30-dniowy trial https://www.jetbrains.com/phpstorm/download/)</li><li>zainstalowany PHP w wersji co najmniej 5.6 z zainstalowanym mod_sqlite3</li><li>zainstalowany composer (https://getcomposer.org/)</li><li>zainstalowany Git (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)</li></ul>",
+        "sponsor-name": "mBank",
+        "sponsor-url": "http://www.mbank.pl",
+        "sponsors": [
+            {
+                "name": "mBank",
+                "url": "http://www.mbank.pl",
+                "img": "/images/sponsors/mbank-logo.png"
+            },
+            {
+                "name": "JetBrains",
+                "url": "http://jetbrains.com",
+                "img": "/images/sponsors/jetbrains-logo.png"
+            }
         ],
-        
-        "meetup-register-url" : "http://www.meetup.com/devWarsztaty/"
+        "meetup-register-url": "http://www.meetup.com/devWarsztaty/"
     }
 ]
