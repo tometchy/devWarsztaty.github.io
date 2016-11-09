@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>devWarsztaty</title>
+		<title>devWarsztaty - 09 - Xamarin Platform & Xamarin.Forms</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-<meta name="description" content="devWarsztaty, inicjatywa typu społeczność dla społeczności zainaugurowana przez Jakuba Gutkowskiego">
+<meta name="description" content="Xamarin Platform & Xamarin.Forms - Tworzenie aplikacji mobilnej przy użyciu Xamarin Platform i Xamarin.Forms.">
 
-
-<meta property="og:image" content="http://devWarsztaty.pl/images/logo-627x627.jpg">
+<meta property="og:image" content="http://devWarsztaty.pl/images/speakers/konrad-kokosa.jpg">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:type" content="website">
-<meta property="og:title" content="devWarsztaty">
-<meta property="og:description" content="devWarsztaty - inicjatywa typu społeczność dla społeczności zainaugurowana przez Jakuba Gutkowskiego">
-<meta property="og:url" content="http://devWarsztaty.pl">
+<meta property="og:title" content="devWarsztaty - 09 - Xamarin Platform & Xamarin.Forms">
+<meta property="og:description" content="Tworzenie aplikacji mobilnej przy użyciu Xamarin Platform i Xamarin.Forms.">
+<meta property="og:url" content="http://devWarsztaty.pl/warsztaty/2016-06-04">
 <meta property="og:site_name" content="devWarsztaty">
 <meta property="article:publisher" content="https://www.facebook.com/devWarsztaty">
 <meta property="fb:admins" content="1077660901">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:description" content="devWarsztaty - inicjatywa typu społeczność dla społeczności zainaugurowana przez Jakuba Gutkowskiego">
-<meta name="twitter:title" content="devWarsztaty">
+<meta name="twitter:description" content="Tworzenie aplikacji mobilnej przy użyciu Xamarin Platform i Xamarin.Forms.">
+<meta name="twitter:title" content="devWarsztaty - 09 - Xamarin Platform & Xamarin.Forms">
 <meta name="twitter:site" content="@devWarsztaty">
 <meta name="twitter:creator" content="@devWarsztaty">
 <meta name="twitter:domain" content="devWarsztaty">
-<meta name="twitter:image:src" content="http://devWarsztaty.pl/images/logo-627x627.jpg">
+<meta name="twitter:image:src" content="http://devWarsztaty.pl/images/speakers/konrad-kokosa.jpg">
 
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -60,7 +59,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
 
-		<link rel="canonical" href="http://devWarsztaty.pl">
+		<link rel="canonical" href="http://devWarsztaty.pl/warsztaty/2016-11-19">
 	</head>
 	<body>
 		<header id="header">
@@ -86,10 +85,13 @@
 
 								<!--== Navigation Menu ==-->
 								<ul class="nav navbar-nav">
-									<li class="current"><a href="#current">Nadchodzące</a></li>
-									<li><a href="#prev">Minione</a></li>
+									<li class="current"><a href="#header">Home</a></li>
+									<li><a href="#about">O warsztatach</a></li>
+									<li><a href="#schedule">Agenda</a></li>
+									<li><a href="#speakers">Prelegent</a></li>
 									<li><a href="#faq">FAQ</a></li>
 									<li><a href="#partners">Sponsorzy</a></li>
+									<li><a href="#register">Rejestracja</a></li>
 								</ul>
 
 							</div>
@@ -99,11 +101,11 @@
 			</div>
 
 			<!--== Site Description ==-->
-			<!-- <div class="header-cta">
+			<div class="header-cta">
 				<div class="container">
 					<div class="row">
 						<div class="blk">
-							<h1>Testy automatyczne<br/> w praktyce (.NET)</h1>
+							<h1>Xamarin Platform & Xamarin.Forms</h1>
 						</div>
 					</div>
 					<div class="row">
@@ -112,7 +114,7 @@
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 
 			<div class="header-bg">
 				<div id="preloader">
@@ -132,170 +134,149 @@
 		<div class="content">
 			<div class="container box">
 
+
+				<!--===============================-->
+				<!--== Features ===================-->
+				<!--===============================-->
+				<section id="features" class="row">
+					<div class="col-md-3 col-xs-6">
+						<div class="event-info">
+							<div class="icon fa fa-map-marker"></div>
+							<div class="info">
+								<h3>Wrocław</h3>
+								<span>PGS Software Klecińska 123, Wrocław</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="event-info">
+							<div class="icon fa fa-calendar"></div>
+							<div class="info">
+								<h3>19 listopada</h3>
+								<span>bieżący rok :)</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="event-info">
+							<div class="icon fa fa-microphone"></div>
+							<div class="info">
+								<h3>Damian Jarosch</h3>
+								<!-- <span></span> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="event-info">
+							<div class="icon fa fa-users"></div>
+							<div class="info">
+								<h3>24 miejsc</h3>
+								<span>Pospiesz się!</span>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--==========-->
+
+
 				<!--===============================-->
 				<!--== About  =====================-->
 				<!--===============================-->
-				<section id="current" class="row">
+				<section id="about" class="row">
 					<div class="col-sm-12">
 						<div class="section-header text-left">
-							<h2>Nadchodzące wydarzenia</h2>
+							<h2>Xamarin Platform & Xamarin.Forms</h2>
 						</div>
-					</div>	
-					<div class="col-md-6 col-sm-6">
-						<div class="pricing-table">
-							<h3 class="table-title">Xamarin Platform & Xamarin.Forms - Wrocław</h3>
-							<div class="table-price">19 listopada 2016</div>
-							<ul class="table-features">
-								<li>
-									<a class="fa fa-users" href="https://www.meetup.com/devWarsztaty/events/235328966/"><span>meetup</span></a>
-								</li>
-								<li>
-									<a class="fa fa-globe" href="/warsztaty/2016-11-19"><span>strona informacyjna</span></a>
-								</li>
-							</ul>
-						</div>
-					</div>	
-					<div class="col-md-6 col-sm-6">
-						<div class="pricing-table">
-							<h3 class="table-title">Podstawy Symfony</h3>
-							<div class="table-price">26 listopada 2016</div>
-							<ul class="table-features">
-								<li>
-									<a class="fa fa-users" href="https://www.meetup.com/devWarsztaty/events/235319532/"><span>meetup</span></a>
-								</li>
-								<li>
-									<a class="fa fa-globe" href="/warsztaty/2016-11-26"><span>strona informacyjna</span></a>
-								</li>
-							</ul>
-						</div>
-					</div>	
+					</div>
+					<div class="col-sm-12">
+						Tworzenie aplikacji mobilnej przy użyciu Xamarin Platform i Xamarin.Forms.
+					</div>
 				</section>
 				<!--==========-->
 
 				<!--===============================-->
+				<!--== Schedule ===================-->
+				<!--===============================-->
+				<section id="schedule" class="row">
+					<div class="col-md-6 col-sm-12">
+						<h2>Agenda</h2>
+						<ul>
+							<li>Wprowadzenie. Jak to działa. Forma: prezentacja.</li>
+
+<li>Opis rodzajów projektów.Klasyczne/xamarin forms</li>
+
+<li>Piszemy aplikację: pomysł jeszcze się nie wyklarował. Aplikacja która strzela do api. Wyświetla wyniki. Nawigacja pomiędzy stronami</li>
+<li>XAML + MVVM – aplikujemy Mvvm Light Toolkit.</li>
+
+<li>Pluginy. Przegląd możliwości. Aplikujemy jakies przykładowe: typu settings</li>
+
+<li>Baza danych. SQLite czy RealmDB?</li>
+							</ul>
+						<p>
+							Wymagania:
+						</p>
+						<ul>
+							<li>podstawowa znajomość C#/.net</li>
+
+<li>Komputer z systemem Windows 10 lub Mac z OSX (co najmniej 10.11). </li>
+
+<li>Visual Studio 2015 (dotyczy komputerów z Windows). </li>
+
+<li>Zainstalowany kompletny pakiet Xamarin. </li>
+
+<li>Działająca aplikacja "Hello World" na symulatorze Android lub/i iOS</li>
+						</ul>
+						<p>
+						Niezmienną rzeczą naszych spotkań oczywiście jest:
+						</p>
+						<ul>
+						<li>Kawa - dostępna na miejscu</li>
+						<li>Obiad - sponsorowany.</li>
+						<li>Piwo/kawa po - we własnym zakresie</li>
+						</ul>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<h2>Należy pamiętać o</h2>
+						<ul>
+							<li>BYOD - Bring Your Own Device.</li>
+							<li>Piwo we własnym zakresie.</li>
+						    <li>Uśmiech, poczucie humoru czy też chęć nauki - we własnym zakresie.</li>
+							<li>Resztę postaramy się dostarczyć :)</li>
+						</ul>
+					</div>
+				</section>
+				<!--==========-->
+
+
+
+
+				<!--===============================-->
 				<!--== Speakers ===================-->
 				<!--===============================-->
-				<section id="prev" class="row separated">
+				<section id="speakers" class="row separated">
 					<div class="col-sm-12">
-						<div class="section-header text-left">
-							<h2>Minione</h2>
+						<div class="section-header text-center">
+							<h2>Prelegent</h2>
+							<h4>Nasz  wykładowca ;)</h4>
 						</div>
 					</div>
-					
-						<div class="col-md-6 col-sm-6">
-							<div class="pricing-table">
-								<h3 class="table-title">Pamięć w .NET - wszystko co chciałbyś wiedzieć</h3>
-								<div class="table-price">15 października 2016</div>
-								<ul class="table-features">
-									<li>
-										<a class="fa fa-users" href="http://www.meetup.com/devWarsztaty/events/231345610/"><span>meetup</span></a>
-									</li>
-									<li>
-										<a class="fa fa-globe" href="/warsztaty/2016-10-15"><span>strona informacyjna</span></a>
-									</li>
-								</ul>
+					<div class="col-sm-12">
+						<div class="speaker">
+							<div class="speaker-info">
+								<div class="speaker-photo">
+									<img src="/images/speakers/damian-jarosch.jpg" alt="Damian Jarosch">
+								</div>								
+								<div class="speaker-contacts">
+									<a href="https://twitter.com/flatplanet_pl" target="_blank" class="contact pull-right fa fa-twitter"></a>
+								</div>
 							</div>
+							<h3><a href="/prelegenci/damian-jarosch/">Damian Jarosch</a></h3>
+							<p>Entuzjasta technologii mobilnych. .Net developer. Team Leader i Tech Leader w PGS Software.</p>
+							<p>
+							<a href="/prelegenci/damian-jarosch/">więcej...</a>
+							</p>
 						</div>
-					
-			
-						<div class="col-md-6 col-sm-6">
-							<div class="pricing-table">
-								<h3 class="table-title">Diagnostyka aplikacji z użyciem WinDbg</h3>
-								<div class="table-price">18 czerwca 2016</div>
-								<ul class="table-features">
-									<li>
-										<a class="fa fa-users" href="http://www.meetup.com/devWarsztaty/events/231346066/"><span>meetup</span></a>
-									</li>
-									<li>
-										<a class="fa fa-globe" href="/warsztaty/2016-06-18"><span>strona informacyjna</span></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="pricing-table">
-								<h3 class="table-title">Pamięć w .NET - wszystko co chciałbyś wiedzieć</h3>
-								<div class="table-price">4 czerwca 2016</div>
-								<ul class="table-features">
-									<li>
-										<a class="fa fa-users" href="http://www.meetup.com/devWarsztaty/events/231345610/"><span>meetup</span></a>
-									</li>
-									<li>
-										<a class="fa fa-globe" href="/warsztaty/2016-06-04"><span>strona informacyjna</span></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="pricing-table">
-								<h3 class="table-title">Wprowadzenie do GIT</h3>
-								<div class="table-price">30 stycznia 2016</div>
-								<ul class="table-features">
-									<li>
-										<a class="fa fa-users" href="http://www.meetup.com/devWarsztaty/events/227845588/"><span>meetup</span></a>
-									</li>
-									<li>
-										<a class="fa fa-globe" href="/warsztaty/2016-01-30"><span>strona informacyjna</span></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="pricing-table">
-								<h3 class="table-title">Beacathon</h3>
-								<div class="table-price">16 stycznia 2016</div>
-								<ul class="table-features">
-									<li>
-										<a class="fa fa-users" href="http://www.meetup.com/devWarsztaty/events/227845524/"><span>meetup</span></a>
-									</li>
-									<li>
-										<a class="fa fa-globe" href="/warsztaty/2016-01-16"><span>strona informacyjna</span></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="pricing-table">
-								<h3 class="table-title">Testy obciążeniowe</h3>
-								<div class="table-price">3 paźdzernika 2015</div>
-								<ul class="table-features">
-									<li>
-										<a class="fa fa-users" href="http://www.meetup.com/devWarsztaty/events/225567706/"><span>meetup</span></a>
-									</li>
-									<li>
-										<a class="fa fa-globe" href="/warsztaty/2015-10-03"><span>strona informacyjna</span></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="pricing-table">
-								<h3 class="table-title">Testy automatyczne w praktyce (.NET) </h3>
-								<div class="table-price">26 września 2015</div>
-								<ul class="table-features">
-									<li>
-										<a class="fa fa-users" href="http://www.meetup.com/devWarsztaty/events/225010681/"><span>meetup</span></a>
-									</li>
-									<li>
-										<a class="fa fa-globe" href="/warsztaty/2015-09-26"><span>strona informacyjna</span></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="pricing-table">
-								<h3 class="table-title">Wprowadzenie do UT w .NET</h3>
-								<div class="table-price">30 maja 2015</div>
-								<ul class="table-features">
-									<li>
-										<a class="fa fa-users" href="http://www.meetup.com/devWarsztaty/events/222327279/"><span>meetup</span></a>
-									</li>
-									<li>
-										<a class="fa fa-globe" href="/warsztaty/2015-05-30"><span>strona informacyjna</span></a>
-									</li>
-								</ul>
-							</div>
-						</div>
+					</div>
 				</section>
 				<!--==========-->
 
@@ -372,42 +353,20 @@
 					<div class="col-sm-12">
 						<div class="section-header text-center">
 							<h2>Sponsorzy</h2>
-							<h4>Gdyby nie oni, spotkania nie doszły by do skutku, dziękujemy.</h4>
+							<h4>Gdyby nie oni, spotkanie nie doszłoby do skutku, dziękujemy.</h4>
 						</div>
 					</div>
 					<div class="col-sm-12">
 						<div id="carousel" class="owl-carousel">
 							<div class="item" style="height: 55px">
-								<a href="http://mbank.pl" target="_blank"><img src="/images/sponsors/mbank-logo.png" alt="mBank"></a>
+								
+								<a href="https://www.pgs-soft.com/" target="_blank"><img src="/images/sponsors/pgs-software-logo.png" alt="PGS Software"></a>
 							</div>
 							<div class="item" style="height: 55px">
-								<a href="https://www.bankmillennium.pl/" target="_blank"><img src="/images/sponsors/millenium-logo.png" alt="Bank Millenium"></a>
-							</div>
-							<div class="item" style="height: 55px">
-								<a href="http://ncrunch.net" target="_blank"><img src="/images/sponsors/ncrunch-logo.png" alt="ncrunch"></a>
-							</div>
-							<div class="item" style="height: 55px">
-								<a href="http://telerik.com" target="_blank"><img src="/images/sponsors/telerik-logo.png" alt="telerik"></a>
-							</div>
-							<div class="item" style="height: 55px">
-								<a href="http://oz-code.com" target="_blank"><img src="/images/sponsors/ozcode-logo.png" alt="mBank"></a>
-							</div>
-							<div class="item" style="height: 55px">
+								
 								<a href="http://jetbrains.com" target="_blank"><img src="/images/sponsors/jetbrains-logo.png" alt="JetBrains"></a>
 							</div>
 							
-							<div class="item" style="height: 55px">
-								<a href="http://wrocsharp.com/" target="_blank"><img src="/images/sponsors/wroc-logo.png" alt="Wroc#"></a>
-							</div>
-							<div class="item" style="height: 55px">
-								<a href="http://programistok.org/" target="_blank"><img src="/images/sponsors/programistok-logo.png" alt="Programistok"></a>
-							</div>
-							<div class="item" style="height: 55px">
-								<a href="http://net.developerdays.pl/" target="_blank"><img src="/images/sponsors/netdevdeys-logo.png" alt=".NET Developer Days"></a>
-							</div>
-							<div class="item" style="height: 55px">
-								<a href="http://leetspeak.se/2015/" target="_blank"><img src="/images/sponsors/leetspeak-logo.png" alt="Leetspeak 2015"></a>
-							</div>
 						</div>
 						<div class="owl-carousel-navigation">
 							<a class="owl-btn prev fa fa-angle-left"></a>
@@ -417,11 +376,89 @@
 				</section>
 				<!--==========-->
 
+
+
+				<!--===============================-->
+				<!--== Pricing Tables =============-->
+				<!--===============================-->
+				<!-- <section id="prices" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-left">
+							<h2>Pricing Tables</h2>
+							<h4>Awesome section description goes here.</h4>
+						</div>
+					</div>
+					<ul class="col-sm-3 pricing-features">
+						<li>Seat</li>
+						<li>Coffe Break</li>
+						<li>Certificate</li>
+					</ul>
+					<div class="col-md-3 col-sm-4">
+						<div class="pricing-table">
+							<h3 class="table-title">Silver</h3>
+							<div class="table-price">$99</div>
+							<ul class="table-features">
+								<li class="fa fa-check-circle"><span>Seat</span></li>
+								<li class="fa fa-minus-circle"><span>Coffe Break</span></li>
+								<li class="fa fa-minus-circle"><span>Certificate</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4">
+						<div class="pricing-table">
+							<h3 class="table-title">Gold</h3>
+							<div class="table-price">$199</div>
+							<ul class="table-features">
+								<li class="fa fa-check-circle"><span>Seat</span></li>
+								<li class="fa fa-check-circle"><span>Coffe Break</span></li>
+								<li class="fa fa-minus-circle"><span>Certificate</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4">
+						<div class="pricing-table">
+							<h3 class="table-title">Platinum</h3>
+							<div class="table-price">$299</div>
+							<ul class="table-features">
+								<li class="fa fa-check-circle"><span>Seat</span></li>
+								<li class="fa fa-check-circle"><span>Coffe Break</span></li>
+								<li class="fa fa-check-circle"><span>Certificate</span></li>
+							</ul>
+						</div>
+					</div>
+				</section> -->
+				<!--==========-->
+
+
+				<!--===============================-->
+				<!--== Register ===================-->
+				<!--===============================-->
+				<section id="register" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-center">
+							<h2>Rejestracja</h2>
+							<h4>Rejestracja na spotkanie poprzez portal <a href="http://www.meetup.com/devWarsztaty/">Meetup</a>.</h4>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="form">
+							<div class="col-sm-12">
+								<input type="submit" value="Zarejestruj się" name="submit" id="register-btn">
+								<!-- <a href="http://www.meetup.com/devWarsztaty/events/222327279/"
+									class="btn-local btn-submit" role="button">
+									Zarejestruj się
+								</a> -->
+							</div>
+						</form>
+					</div>
+				</section>
+				<!--==========-->
+
 				<div id="gotop" class="gotop fa fa-arrow-up"></div>
 			</div>
 		</div>
 		<footer id="footer">
-			<!-- <div id="map_canvas"></div> -->
+			<div id="map_canvas"></div>
 			
 			<div class="footer">
 				<div class="container box">
@@ -464,7 +501,12 @@
 		<script src="/js/main.js"></script>
 		<!-- endbuild -->
 		<script>
-		
+		var venueAddress = 'PGS Software, Klecińska 123, Wrocław, Poland'; // Venue
+
+		$('#register-btn').click(function(evt) {
+                evt.preventDefault();
+                window.location = 'https://www.meetup.com/devWarsztaty/events/235328966/';
+            });
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

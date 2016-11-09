@@ -10,7 +10,7 @@
 <meta property="og:image" content="http://devWarsztaty.pl/images/general/05-git-logo.png">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:type" content="website">
-<meta property="og:title" content="devWarsztaty - 07 - Wprowadzenie do GIT">
+<meta property="og:title" content="devWarsztaty - 07 - Diagnostyka aplikacji z użyciem Windows Debuggera (WinDbg)">
 <meta property="og:description" content="Niewielu programistów .NET miało styczność z WinDbg, a nawet jeśli miało, to ten czas często wspomina traumatycznie :) Mimo topornego interfejsu jest to jednak narzędzie, które daje nam (programistom aplikacji na system Windows) ogromne możliwości, z debugowaniem jądra włącznie. Na warsztatach poznacie wiele komend WinDbg, które umożliwią Wam sprawne poruszanie się w tym debuggerze. Postaram się aby teorii nie było za dużo, a przykłady błędów, które będziemy diagnozowali, były podobne do tych z którymi zmagacie się na produkcji :)">
 <meta property="og:url" content="http://devWarsztaty.pl/warsztaty/2016-06-18/">
 <meta property="og:site_name" content="devWarsztaty">
@@ -19,7 +19,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:description" content="Niewielu programistów .NET miało styczność z WinDbg, a nawet jeśli miało, to ten czas często wspomina traumatycznie :) Mimo topornego interfejsu jest to jednak narzędzie, które daje nam (programistom aplikacji na system Windows) ogromne możliwości, z debugowaniem jądra włącznie. Na warsztatach poznacie wiele komend WinDbg, które umożliwią Wam sprawne poruszanie się w tym debuggerze. Postaram się aby teorii nie było za dużo, a przykłady błędów, które będziemy diagnozowali, były podobne do tych z którymi zmagacie się na produkcji :)">
-<meta name="twitter:title" content="devWarsztaty - 07 - Wprowadzenie do GIT">
+<meta name="twitter:title" content="devWarsztaty - 07 - Diagnostyka aplikacji z użyciem Windows Debuggera (WinDbg)">
 <meta name="twitter:site" content="@devWarsztaty">
 <meta name="twitter:creator" content="@devWarsztaty">
 <meta name="twitter:domain" content="devWarsztaty">
@@ -158,6 +158,15 @@
 					</div>
 					<div class="col-md-3 col-xs-6">
 						<div class="event-info">
+							<div class="icon fa fa-microphone"></div>
+							<div class="info">
+								<h3>Sebastian Solnica</h3>
+								<!-- <span></span> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="event-info">
 							<div class="icon fa fa-users"></div>
 							<div class="info">
 								<h3>20 miejsc</h3>
@@ -237,7 +246,7 @@
 							<h2>Prelegenci</h2>
 						</div>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-12">
 						<div class="speaker">
 							<div class="speaker-info">
 								<div class="speaker-photo">
@@ -341,12 +350,6 @@
 							<div class="item" style="height: 55px">
 								<a href="http://mbank.pl" target="_blank"><img src="/images/sponsors/mbank-logo.png" alt="mBank"></a>
 							</div>
-							<div class="item" style="height: 55px">
-								<a href="http://jetbrains.com" target="_blank"><img src="/images/sponsors/jetbrains-logo.png" alt="JetBrains"></a>
-							</div>
-							<div class="item" style="height: 55px">
-								<a href="http://wrocsharp.com/" target="_blank"><img src="/images/sponsors/wroc-logo.png" alt="Wroc#"></a>
-							</div>
 						</div>
 						<div class="owl-carousel-navigation">
 							<a class="owl-btn prev fa fa-angle-left"></a>
@@ -417,7 +420,7 @@
 					<div class="col-sm-12">
 						<div class="section-header text-center">
 							<h2>Rejestracja</h2>
-							<h4>Rejestracja na spotkanie poprzez portal <a href="http://www.meetup.com/devWarsztaty/">Meetup</a>.</h4>
+							<h4>Rejestracja na spotkanie poprzez portal <a href="http://www.meetup.com/devWarsztaty/events/231346066/">Meetup</a>.</h4>
 						</div>
 					</div>
 					<div class="col-sm-12">
@@ -485,7 +488,7 @@
 		//var venueAddress = 'Warsaw, Poland'; // Venue
 		$('#register-btn').click(function(evt) {
                 evt.preventDefault();
-                window.location = 'http://www.meetup.com/devWarsztaty/events/227845588/';
+                window.location = 'http://www.meetup.com/devWarsztaty/events/231346066/';
             });
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
