@@ -961,3 +961,7 @@ ul.accordion-group {
 	list-style-image: none;
 	list-style-type: none;
 }
+
+img.img-dw {
+	padding: 15px;
+}
