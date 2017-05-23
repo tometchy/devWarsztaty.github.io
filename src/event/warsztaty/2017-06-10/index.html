@@ -1,374 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>devWarsztaty - 25 - Kontenery IoC w .NET</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<head>
+	<title>devWarsztaty - 25 - Kontenery IoC w .NET</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-<meta name="description" content="Kontenery IoC w .NET - Dla osób znających podstawy .NET, chcących poznać kontenery IoC">
+	<meta name="description" content="Kontenery IoC w .NET - Dla osób znających podstawy .NET, chcących poznać kontenery IoC">
 
-<meta property="og:image" content="http://devWarsztaty.pl/images/speakers/sebastian-de-gambe.png">
-<meta property="og:locale" content="pl_PL">
-<meta property="og:type" content="website">
-<meta property="og:title" content="devWarsztaty - 25 - Kontenery IoC w .NET">
-<meta property="og:description" content="Dla osób znających podstawy .NET, chcących poznać kontenery IoC">
-<meta property="og:url" content="http://devWarsztaty.pl/warsztaty/2017-06-10">
-<meta property="og:site_name" content="devWarsztaty">
-<meta property="article:publisher" content="https://www.facebook.com/devWarsztaty">
-<meta property="fb:admins" content="1077660901">
+	<meta property="og:image" content="http://devWarsztaty.pl/images/speakers/sebastian-de-gambe.png">
+	<meta property="og:locale" content="pl_PL">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="devWarsztaty - 25 - Kontenery IoC w .NET">
+	<meta property="og:description" content="Dla osób znających podstawy .NET, chcących poznać kontenery IoC">
+	<meta property="og:url" content="http://devWarsztaty.pl/warsztaty/2017-06-10">
+	<meta property="og:site_name" content="devWarsztaty">
+	<meta property="article:publisher" content="https://www.facebook.com/devWarsztaty">
+	<meta property="fb:admins" content="1077660901">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:description" content="Dla osób znających podstawy .NET, chcących poznać kontenery IoC">
-<meta name="twitter:title" content="devWarsztaty - 25 - Kontenery IoC w .NET">
-<meta name="twitter:site" content="@devWarsztaty">
-<meta name="twitter:creator" content="@devWarsztaty">
-<meta name="twitter:domain" content="devWarsztaty">
-<meta name="twitter:image:src" content="http://devWarsztaty.pl/images/speakers/sebastian-de-gambe.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:description" content="Dla osób znających podstawy .NET, chcących poznać kontenery IoC">
+	<meta name="twitter:title" content="devWarsztaty - 25 - Kontenery IoC w .NET">
+	<meta name="twitter:site" content="@devWarsztaty">
+	<meta name="twitter:creator" content="@devWarsztaty">
+	<meta name="twitter:domain" content="devWarsztaty">
+	<meta name="twitter:image:src" content="http://devWarsztaty.pl/images/speakers/sebastian-de-gambe.png">
 
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#2d89ef">
-<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-<meta name="theme-color" content="#ffffff">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
-		<!-- build:css -->
-		<link href="/css/bootstrap.css" rel="stylesheet" media="screen">
-		<link href="/css/style.css" rel="stylesheet" media="screen">
-		<link href="/css/animate.min.css" rel="stylesheet" media="screen">
-		<link href="/css/font-awesome.css" rel="stylesheet" media="screen">
-		<link href="/css/owl.carousel.css" rel="stylesheet" media="screen">
-		<link href="/css/flexslider.css" rel="stylesheet" media="screen">
-		<link href="/css/fancySelect.css" rel="stylesheet" media="screen">
-		<link href="/css/responsive.css" rel="stylesheet" media="screen">
-		<!-- endbuild -->
+	<!-- build:css -->
+	<link href="/css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="/css/style.css" rel="stylesheet" media="screen">
+	<link href="/css/animate.min.css" rel="stylesheet" media="screen">
+	<link href="/css/font-awesome.css" rel="stylesheet" media="screen">
+	<link href="/css/owl.carousel.css" rel="stylesheet" media="screen">
+	<link href="/css/flexslider.css" rel="stylesheet" media="screen">
+	<link href="/css/fancySelect.css" rel="stylesheet" media="screen">
+	<link href="/css/responsive.css" rel="stylesheet" media="screen">
+	<!-- endbuild -->
 
-		<!--== Google Fonts ==-->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
+	<!--== Google Fonts ==-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
 
-		<link rel="canonical" href="http://devWarsztaty.pl/warsztaty/2015-10-03">
-	</head>
-	<body>
-		<header id="header">
-			<div id="menu" class="header-menu fixed">
-				<div class="container box">
-					<div class="row">
-						<nav role="navigation" class="col-sm-12">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+	<link rel="canonical" href="http://devWarsztaty.pl/warsztaty/2015-10-03">
+</head>
+
+<body>
+	<header id="header">
+		<div id="menu" class="header-menu fixed">
+			<div class="container box">
+				<div class="row">
+					<nav role="navigation" class="col-sm-12">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 									<span class="sr-only">Toggle navigation</span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
 
-								<!--== Logo ==-->
-								<span class="navbar-brand logo">
+							<!--== Logo ==-->
+							<span class="navbar-brand logo">
 									<span class="fa fa-map-marker"></span>devWarsztaty
-								</span>
+							</span>
 
-							</div>
-							<div class="navbar-collapse collapse">
+						</div>
+						<div class="navbar-collapse collapse">
 
-								<!--== Navigation Menu ==-->
-								<ul class="nav navbar-nav">
-									<li class="current"><a href="#header">Home</a></li>
-									<li><a href="#about">O warsztatach</a></li>
-									<li><a href="#schedule">Agenda</a></li>
-									<li><a href="#speakers">Prelegent</a></li>
-									<li><a href="#faq">FAQ</a></li>
-									<li><a href="#partners">Sponsorzy</a></li>
-									<li><a href="#register">Rejestracja</a></li>
-								</ul>
+							<!--== Navigation Menu ==-->
+							<ul class="nav navbar-nav">
+								<li class="current"><a href="#header">Home</a></li>
+								<li><a href="#about">O warsztatach</a></li>
+								<li><a href="#schedule">Agenda</a></li>
+								<li><a href="#speakers">Prelegent</a></li>
+								<li><a href="#faq">FAQ</a></li>
+								<li><a href="#partners">Sponsorzy</a></li>
+								<li><a href="#register">Rejestracja</a></li>
+							</ul>
 
-							</div>
-						</nav>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<!--== Site Description ==-->
+		<div class="header-cta">
+			<div class="container">
+				<div class="row">
+					<div class="blk">
+						<h1>Kontenery IoC w .NET</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="blk">
+						<input type="submit" value="Zarejestruj się" name="submit" id="goregister">
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<!--== Site Description ==-->
-			<div class="header-cta">
-				<div class="container">
-					<div class="row">
-						<div class="blk">
-							<h1>Kontenery IoC w .NET</h1>
-						</div>
-					</div>
-					<div class="row">
-						<div class="blk">
-							<input type="submit" value="Zarejestruj się" name="submit" id="goregister">
-						</div>
-					</div>
-				</div>
+		<div class="header-bg">
+			<div id="preloader">
+				<div class="preloader"></div>
 			</div>
+			<div class="main-slider" id="main-slider">
 
-			<div class="header-bg">
-				<div id="preloader">
-					<div class="preloader"></div>
+				<!--== Main Slider ==-->
+				<ul class="slides">
+					<li><img src="/images/bg01.jpg" alt="Slide Image" /></li>
+				</ul>
+
+			</div>
+		</div>
+	</header>
+
+	<div class="content">
+		<div class="container box">
+
+
+			<!--===============================-->
+			<!--== Features ===================-->
+			<!--===============================-->
+			<section id="features" class="row">
+				<div class="col-md-3 col-xs-6">
+					<div class="event-info">
+						<div class="icon fa fa-map-marker"></div>
+						<div class="info">
+							<h3>Kraków</h3>
+							<span>Codecool Poland<br/>Ślusarska 9</span>
+						</div>
+					</div>
 				</div>
-				<div class="main-slider" id="main-slider">
+				<div class="col-md-3 col-xs-6">
+					<div class="event-info">
+						<div class="icon fa fa-calendar"></div>
+						<div class="info">
+							<h3>10 czerwca</h3>
+							<span>2017</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<div class="event-info">
+						<div class="icon fa fa-microphone"></div>
+						<div class="info">
+							<h3>
+								Sebastian De Gambe&nbsp;
+							</h3>
+							<!-- <span></span> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<div class="event-info">
+						<div class="icon fa fa-users"></div>
+						<div class="info">
+							<h3>20 miejsc</h3>
+							<span>Pospiesz się!</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--==========-->
 
-					<!--== Main Slider ==-->
-					<ul class="slides">
-						<li><img src="/images/bg01.jpg" alt="Slide Image"/></li>
+
+			<!--===============================-->
+			<!--== About  =====================-->
+			<!--===============================-->
+			<section id="about" class="row">
+				<div class="col-sm-12">
+					<div class="section-header text-left">
+						<h2>Kontenery IoC w .NET</h2>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<p>
+						Warsztat skierowany jest dla osób znających podstawy C# i chcących poznać i zrozumieć działanie kontenerów IoC.
+					</p>
+					<p>Podczas warsztatów wyjaśnimy zamieszanie związane z takimi pojęciami jak Dependency Injection oraz Inversion of Control.</p>
+					<p>Uczestnicy warsztatów na podstawie zdobytej wiedzy zaimplementują wszystkie omówione kontenery i wybiorą ten, który
+						im najbardziej pasuje.</p>
+				</div>
+			</section>
+			<!--==========-->
+
+			<!--===============================-->
+			<!--== Schedule ===================-->
+			<!--===============================-->
+			<section id="schedule" class="row">
+				<div class="col-md-6 col-sm-12">
+					<h2>Agenda</h2>
+					<p>Godziny 10:00 - 15:00</p>
+					<p>
+						<ul>
+							<li>Wprowadzenie</li>
+							<li>Dependency Inversion Principle</li>
+							<li>Dependency Injection</li>
+							<li>Inversion of Control</li>
+							<li>Czy jest sens pisać własne kontenery? + DEMO</li>
+							<li>Autofac + DEMO</li>
+							<li>Ninject + DEMO</li>
+							<li>Castle Windsor + DEMO</li>
+							<li>Unity + DEMO</li>
+							<li>Jaki kontener wybrać?</li>
+						</ul>
+						<p>
+							Niezmienną rzeczą naszych spotkań oczywiście jest:
+						</p>
+						<ul>
+							<li>Kawa - dostępna na miejscu</li>
+							<li>Obiad - pizza sponsorowana przez <a href="https://codecool.com" target="_blank">Codecool</a>.</li>
+							<li>Piwo/kawa po - we własnym zakresie</li>
+						</ul>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<h2>Wymagania</h2>
+					<p>Zainstalowane środowisko Visual Studio 2015 lub 2017 Community lub wyższe.</p>
+					<h2>Należy pamiętać o</h2>
+					<ul>
+						<li>BYOD - Bring Your Own Device.</li>
+						<li>Piwo we własnym zakresie.</li>
+						<li>Uśmiech, poczucie humoru czy też chęć nauki - we własnym zakresie.</li>
+						<li>Resztę postaramy się dostarczyć :)</li>
 					</ul>
 
 				</div>
-			</div>
-		</header>
-
-		<div class="content">
-			<div class="container box">
+			</section>
+			<!--==========-->
 
 
-				<!--===============================-->
-				<!--== Features ===================-->
-				<!--===============================-->
-				<section id="features" class="row">
-					<div class="col-md-3 col-xs-6">
-						<div class="event-info">
-							<div class="icon fa fa-map-marker"></div>
-							<div class="info">
-								<h3>Kraków</h3>
-								<span>Codecool Poland<br/>Ślusarska 9</span>
+
+
+			<!--===============================-->
+			<!--== Speakers ===================-->
+			<!--===============================-->
+			<section id="speakers" class="row separated">
+				<div class="col-sm-12">
+					<div class="section-header text-center">
+
+						<h2>Prelegent</h2>
+
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="speaker">
+						<div class="speaker-info">
+							<div class="speaker-photo">
+								<img src="/images/speakers/sebastian-de-gambe.png" alt="Sebastian De Gambe">
+							</div>
+							<div class="speaker-contacts">
+								<a href="http://www.s.degambe.pl/" target="_blank" class="contact pull-left fa fa-globe"></a>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-3 col-xs-6">
-						<div class="event-info">
-							<div class="icon fa fa-calendar"></div>
-							<div class="info">
-								<h3>6 czerwca</h3>
-								<span>2017</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6">
-						<div class="event-info">
-							<div class="icon fa fa-microphone"></div>
-							<div class="info">
-								<h3>
-										Sebastian De Gambe&nbsp;	
-								</h3>
-								<!-- <span></span> -->
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6">
-						<div class="event-info">
-							<div class="icon fa fa-users"></div>
-							<div class="info">
-								<h3>20 miejsc</h3>
-								<span>Pospiesz się!</span>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!--==========-->
-
-
-				<!--===============================-->
-				<!--== About  =====================-->
-				<!--===============================-->
-				<section id="about" class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-left">
-							<h2>Kontenery IoC w .NET</h2>
-						</div>
-					</div>
-					<div class="col-sm-12">
-						<p>Dla osób znających podstawy .NET, chcących poznać kontenery IoC</p>
+						<h3><a href="/prelegenci/sebastian-de-gambe/">Sebastian De Gambe</a></h3>
+						<p>Zawodowy programista z zamiłowania, od zawsze związany z technologiami Microsoft.</p>
 						<p>
-							Uczestnicy sprawdzą wszystkie wcześniej omówione kontenery pisząc przykładowe aplikacji z ich wykorzystaniem.
-						</p>
-						<p>
-							Na koniec uczestnicy sami podsumują jaki kontener jest dla nich najwygodniejszy.
+							<a href="/prelegenci/sebastian-de-gambe/">więcej...</a>
 						</p>
 					</div>
-				</section>
-				<!--==========-->
+				</div>
+			</section>
+			<!--==========-->
 
-				<!--===============================-->
-				<!--== Schedule ===================-->
-				<!--===============================-->
-				<section id="schedule" class="row">
-					<div class="col-md-6 col-sm-12">
-						<h2>Agenda</h2>
-						<p>Godziny 10:00 - 15:00</p><p><ul><li>Wprowadzenie</li><li>Dependency Inversion Principle</li><li>Dependency Injection</li><li>Inversion of Control</li><li>Czy jest sens pisać własne kontenery? + DEMO</li><li>Autofac + DEMO</li><li>Ninject + DEMO</li><li>Castle Windsor + DEMO</li><li>Unity + DEMO</li><li>Jaki kontener wybrać?</li></ul>
-						<p>
-						Niezmienną rzeczą naszych spotkań oczywiście jest:
-						</p>
-						<ul>
-						<li>Kawa - dostępna na miejscu</li>
-						<li>Obiad - pizza sponsorowana przez <a href="https://codecool.com" target="_blank">Codecool</a>.</li>
-						<li>Piwo/kawa po - we własnym zakresie</li>
-						</ul>
+
+
+			<!--===============================-->
+			<!--== FAQ ========================-->
+			<!--===============================-->
+			<section id="faq" class="row">
+				<div class="col-sm-12">
+					<div class="section-header text-right">
+						<h2>F.A.Q</h2>
+						<h4>To co chcielibyście wiedzieć a boicie się zapytać ;)</h4>
 					</div>
-					<div class="col-md-6 col-sm-12">
-						<h2>Wymagania</h2>
-						<p>Zainstalowane środowisko Visual Studio 2015 lub 2017 Community lub wyższe.</p>
-						<h2>Należy pamiętać o</h2>
-						<ul>
-							<li>BYOD - Bring Your Own Device.</li>
-							<li>Piwo we własnym zakresie.</li>
-						    <li>Uśmiech, poczucie humoru czy też chęć nauki - we własnym zakresie.</li>
-							<li>Resztę postaramy się dostarczyć :)</li>
-						</ul>
-						
-					</div>
-				</section>
-				<!--==========-->
-
-
-
-
-				<!--===============================-->
-				<!--== Speakers ===================-->
-				<!--===============================-->
-				<section id="speakers" class="row separated">
-					<div class="col-sm-12">
-						<div class="section-header text-center">
-
-								<h2>Prelegent</h2>
-							
-						</div>
-					</div>
-					<div class="col-sm-12">
-							<div class="speaker">
-								<div class="speaker-info">
-									<div class="speaker-photo">
-										<img src="/images/speakers/sebastian-de-gambe.png" alt="Sebastian De Gambe">
-									</div>								
-									<div class="speaker-contacts">
-										<a href="http://www.s.degambe.pl/" target="_blank" class="contact pull-left fa fa-globe"></a>
-									</div>
-								</div>
-								<h3><a href="/prelegenci/sebastian-de-gambe/">Sebastian De Gambe</a></h3>
-								<p>Zawodowy programista z zamiłowania, od zawsze związany z technologiami Microsoft.</p>
-								<p>
-								<a href="/prelegenci/sebastian-de-gambe/">więcej...</a>
-								</p>
+				</div>
+				<div class="col-sm-12">
+					<p>
+						Jest to skrócona wersja FAQ, by przeczytać pełną i dowiedzieć się więcej o idei stojącej za devWarsztatami, zapraszamy na
+						stronę <a href="/faq/">FAQ</a>.
+					</p>
+				</div>
+				<div class="col-sm-6">
+					<ul class="accordion-group">
+						<li class="accordion">
+							<a class="accordion-heading">
+								<h4 class="accordion-title">Czy to jest darmowy event ?</h4>
+								<span class="fa fa-plus-circle pull-right"></span>
+							</a>
+							<div class="accordion-body">
+								Tak! nie licząc obiadu i piwa, wszystko inne jest zorganizowane - zazwyczaj, chyba, że w opisie spotkania jest napisane inaczej,
+								czasami obiad może być sponsorowany, a czasami może nawet i piwo.
 							</div>
-					</div>
-				</section>
-				<!--==========-->
-
-
-
-				<!--===============================-->
-				<!--== FAQ ========================-->
-				<!--===============================-->
-				<section id="faq" class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-right">
-							<h2>F.A.Q</h2>
-							<h4>To co chcielibyście wiedzieć a boicie się zapytać ;)</h4>
-						</div>
-					</div>
-					<div class="col-sm-12">
-						<p>
-						Jest to skrócona wersja FAQ, by przeczytać pełną i dowiedzieć się więcej o idei stojącej za devWarsztatami, zapraszamy na stronę <a href="/faq/">FAQ</a>.
-						</p>
-					</div>
-					<div class="col-sm-6">
-						<ul class="accordion-group">
-						    <li class="accordion">
-						        <a class="accordion-heading">
-						        	<h4 class="accordion-title">Czy to jest darmowy event ?</h4>
-						        	<span class="fa fa-plus-circle pull-right"></span>
-						        </a>
-						        <div class="accordion-body">
-						        	Tak! nie licząc obiadu i piwa, wszystko inne jest zorganizowane - zazwyczaj, chyba, że w opisie spotkania jest napisane inaczej, czasami obiad może być sponsorowany, a czasami może nawet i piwo.
-						        </div>
-						    </li>
-						    <li class="accordion">
-						        <a class="accordion-heading">
-						        	<h4 class="accordion-title">Czy mogę przyjść bez komputera ?</h4>
-						        	<span class="fa fa-plus-circle pull-right"></span>
-						        </a>
-						        <div class="accordion-body">
-						        	Tak, ale będziesz się trochę nudził. Większość sesji ma w sobie warsztaty, więc wtedy będziesz po prostu siedział i... pił kawę? :)
-						        </div>
-						    </li>
-						</ul>
-					</div>
-					<div class="col-sm-6">
-						<ul class="accordion-group">
-						    <li class="accordion">
-						        <a class="accordion-heading">
-						        	<h4 class="accordion-title">Co muszę mieć ze zobą ?</h4>
-						        	<span class="fa fa-plus-circle pull-right"></span>
-						        </a>
-						        <div class="accordion-body">
-						        	Komputer, plus potwierdzenie rejestracji.
-						        </div>
-						    </li>
-						    <li class="accordion">
-						        <a class="accordion-heading">
-						        	<h4 class="accordion-title">Czy jakoś muszę skonfigurować swój komputer ?</h4>
-						        	<span class="fa fa-plus-circle pull-right"></span>
-						        </a>
-						        <div class="accordion-body">
-						        	Nie, ale fajnie jakbyś ściągnął odpowiednie narzędzia z maila który zostanie wysłany na kilka dni przed spotakniem.
-						        </div>
-						    </li>
-						</ul>
-					</div>
-				</section>
-				<!--==========-->
-
-
-
-				<!--===============================-->
-				<!--== Carousel ===================-->
-				<!--===============================-->
-				<section id="partners" class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-center">
-							<h2>Sponsorzy</h2>
-							<h4>Gdyby nie oni, spotkanie nie doszłoby do skutku, dziękujemy.</h4>
-						</div>
-					</div>
-					<div class="col-sm-12">
-						<div id="carousel" class="owl-carousel">
-							<div class="item" style="height: 55px">
-								
-								<a href="https://codecool.com" target="_blank"><img src="/images/sponsors/codecool-logo.png" alt="Codecool"></a>
+						</li>
+						<li class="accordion">
+							<a class="accordion-heading">
+								<h4 class="accordion-title">Czy mogę przyjść bez komputera ?</h4>
+								<span class="fa fa-plus-circle pull-right"></span>
+							</a>
+							<div class="accordion-body">
+								Tak, ale będziesz się trochę nudził. Większość sesji ma w sobie warsztaty, więc wtedy będziesz po prostu siedział i... pił
+								kawę? :)
 							</div>
-							<div class="item" style="height: 55px">
-								
-								<a href="http://jetbrains.com" target="_blank"><img src="/images/sponsors/jetbrains-logo.png" alt="JetBrains"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-6">
+					<ul class="accordion-group">
+						<li class="accordion">
+							<a class="accordion-heading">
+								<h4 class="accordion-title">Co muszę mieć ze zobą ?</h4>
+								<span class="fa fa-plus-circle pull-right"></span>
+							</a>
+							<div class="accordion-body">
+								Komputer, plus potwierdzenie rejestracji.
 							</div>
-							
-						</div>
-						<div class="owl-carousel-navigation">
-							<a class="owl-btn prev fa fa-angle-left"></a>
-							<a class="owl-btn next fa fa-angle-right"></a>
-						</div>
+						</li>
+						<li class="accordion">
+							<a class="accordion-heading">
+								<h4 class="accordion-title">Czy jakoś muszę skonfigurować swój komputer ?</h4>
+								<span class="fa fa-plus-circle pull-right"></span>
+							</a>
+							<div class="accordion-body">
+								Nie, ale fajnie jakbyś ściągnął odpowiednie narzędzia z maila który zostanie wysłany na kilka dni przed spotakniem.
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!--==========-->
+
+
+
+			<!--===============================-->
+			<!--== Carousel ===================-->
+			<!--===============================-->
+			<section id="partners" class="row">
+				<div class="col-sm-12">
+					<div class="section-header text-center">
+						<h2>Sponsorzy</h2>
+						<h4>Gdyby nie oni, spotkanie nie doszłoby do skutku, dziękujemy.</h4>
 					</div>
-				</section>
-				<!--==========-->
+				</div>
+				<div class="col-sm-12">
+					<div id="carousel" class="owl-carousel">
+						<div class="item" style="height: 55px">
+
+							<a href="https://codecool.com" target="_blank"><img src="/images/sponsors/codecool-logo.png" alt="Codecool"></a>
+						</div>
+						<div class="item" style="height: 55px">
+
+							<a href="http://jetbrains.com" target="_blank"><img src="/images/sponsors/jetbrains-logo.png" alt="JetBrains"></a>
+						</div>
+
+					</div>
+					<div class="owl-carousel-navigation">
+						<a class="owl-btn prev fa fa-angle-left"></a>
+						<a class="owl-btn next fa fa-angle-right"></a>
+					</div>
+				</div>
+			</section>
+			<!--==========-->
 
 
 
-				<!--===============================-->
-				<!--== Pricing Tables =============-->
-				<!--===============================-->
-				<!-- <section id="prices" class="row">
+			<!--===============================-->
+			<!--== Pricing Tables =============-->
+			<!--===============================-->
+			<!-- <section id="prices" class="row">
 					<div class="col-sm-12">
 						<div class="section-header text-left">
 							<h2>Pricing Tables</h2>
@@ -414,39 +431,39 @@
 						</div>
 					</div>
 				</section> -->
-				<!--==========-->
+			<!--==========-->
 
 
-				<!--===============================-->
-				<!--== Register ===================-->
-				<!--===============================-->
-				<section id="register" class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-center">
-							<h2>Rejestracja</h2>
-							<h4>Rejestracja na spotkanie poprzez portal <a href="http://www.meetup.com/devWarsztaty/">Meetup</a>.</h4>
-						</div>
+			<!--===============================-->
+			<!--== Register ===================-->
+			<!--===============================-->
+			<section id="register" class="row">
+				<div class="col-sm-12">
+					<div class="section-header text-center">
+						<h2>Rejestracja</h2>
+						<h4>Rejestracja na spotkanie poprzez portal <a href="http://www.meetup.com/devWarsztaty/">Meetup</a>.</h4>
 					</div>
-					<div class="col-sm-12">
-						<div class="form">
-							<div class="col-sm-12">
-								<input type="submit" value="Zarejestruj się" name="submit" id="register-btn">
-								<!-- <a href="http://www.meetup.com/devWarsztaty/events/222327279/"
+				</div>
+				<div class="col-sm-12">
+					<div class="form">
+						<div class="col-sm-12">
+							<input type="submit" value="Zarejestruj się" name="submit" id="register-btn">
+							<!-- <a href="http://www.meetup.com/devWarsztaty/events/222327279/"
 									class="btn-local btn-submit" role="button">
 									Zarejestruj się
 								</a> -->
-							</div>
+						</div>
 						</form>
 					</div>
-				</section>
-				<!--==========-->
+			</section>
+			<!--==========-->
 
-				<div id="gotop" class="gotop fa fa-arrow-up"></div>
+			<div id="gotop" class="gotop fa fa-arrow-up"></div>
 			</div>
 		</div>
 		<footer id="footer">
 			<div id="map_canvas"></div>
-			
+
 			<div class="footer">
 				<div class="container box">
 
@@ -488,20 +505,23 @@
 		<script src="/js/main.js"></script>
 		<!-- endbuild -->
 		<script>
-		var venueAddress = 'Codecool Poland Sp. z o.o., Ślusarska 9, Kraków'; // Venue
+			var venueAddress = 'Codecool Poland Sp. z o.o., Ślusarska 9, Kraków'; // Venue
 
-		$('#register-btn').click(function(evt) {
-                evt.preventDefault();
-                window.location = 'http://www.meetup.com/devWarsztaty/';
-            });
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			$('#register-btn').click(function (evt) {
+				evt.preventDefault();
+				window.location = 'http://www.meetup.com/devWarsztaty/';
+			});
+			(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-4831504-10', 'auto');
-  ga('send', 'pageview');
+			ga('create', 'UA-4831504-10', 'auto');
+			ga('send', 'pageview');
 
-</script>
-	</body>
+		</script>
+</body>
+
 </html>
