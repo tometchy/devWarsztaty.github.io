@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>devWarsztaty - 18 - Podstawy C# oraz .NET Core</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<meta name="description" content="Warsztaty programowania wprowadzające w najnowszą wersję języka C# oraz platformy .NET Core w wersji 1.1, która została udostępniona w ubiegłym roku przez Microsoft jako rozwiązanie open-source oraz cross-platform tzn. działające na dowolnym systemie operacyjnym.">
+
+<meta property="og:image" content="http://devWarsztaty.pl/images/speakers/piotr-gankiewicz.jpg">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:type" content="website">
+<meta property="og:title" content="devWarsztaty - 18 - Podstawy C# oraz .NET Core">
+<meta property="og:description" content="devWarsztaty - 18 - Podstawy C# oraz .NET Core - Warsztaty programowania wprowadzające w najnowszą wersję języka C# oraz platformy .NET Core w wersji 1.1">
+<meta property="og:url" content="http://devWarsztaty.pl/warsztaty/2017-03-25">
+<meta property="og:site_name" content="devWarsztaty">
+<meta property="article:publisher" content="https://www.facebook.com/devWarsztaty">
+<meta property="fb:admins" content="1077660901">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Warsztaty programowania wprowadzające w najnowszą wersję języka C# oraz platformy .NET Core w wersji 1.1, która została udostępniona w ubiegłym roku przez Microsoft jako rozwiązanie open-source oraz cross-platform tzn. działające na dowolnym systemie operacyjnym.">
+<meta name="twitter:title" content="devWarsztaty - 18 - Podstawy C# oraz .NET Core">
+<meta name="twitter:site" content="@devWarsztaty">
+<meta name="twitter:creator" content="@devWarsztaty">
+<meta name="twitter:domain" content="devWarsztaty">
+<meta name="twitter:image:src" content="http://devWarsztaty.pl/images/speakers/piotr-gankiewicz.png">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+		<!-- build:css -->
+		<link href="/css/bootstrap.css" rel="stylesheet" media="screen">
+		<link href="/css/style.css" rel="stylesheet" media="screen">
+		<link href="/css/animate.min.css" rel="stylesheet" media="screen">
+		<link href="/css/font-awesome.css" rel="stylesheet" media="screen">
+		<link href="/css/owl.carousel.css" rel="stylesheet" media="screen">
+		<link href="/css/flexslider.css" rel="stylesheet" media="screen">
+		<link href="/css/fancySelect.css" rel="stylesheet" media="screen">
+		<link href="/css/responsive.css" rel="stylesheet" media="screen">
+		<!-- endbuild -->
+
+		<!--== Google Fonts ==-->
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
+
+		<link rel="canonical" href="http://devWarsztaty.pl/warsztaty/2017-03-25">
+	</head>
+	<body>
+		<header id="header">
+			<div id="menu" class="header-menu fixed">
+				<div class="container box">
+					<div class="row">
+						<nav role="navigation" class="col-sm-12">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+
+								<!--== Logo ==-->
+								<span class="navbar-brand logo">
+									<span class="fa fa-map-marker"></span>devWarsztaty
+								</span>
+
+							</div>
+							<div class="navbar-collapse collapse">
+
+								<!--== Navigation Menu ==-->
+								<ul class="nav navbar-nav">
+									<li class="current"><a href="#header">Home</a></li>
+									<li><a href="#about">O warsztatach</a></li>
+									<li><a href="#schedule">Agenda</a></li>
+									<li><a href="#speakers">Prelegent</a></li>
+									<li><a href="#faq">FAQ</a></li>
+									<li><a href="#partners">Sponsorzy</a></li>
+									<li><a href="#register">Rejestracja</a></li>
+								</ul>
+
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<!--== Site Description ==-->
+			<div class="header-cta">
+				<div class="container">
+					<div class="row">
+						<div class="blk">
+							<h1>Podstawy C# oraz .NET Core</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="blk">
+							<input type="submit" value="Zarejestruj się" name="submit" id="goregister">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-bg">
+				<div id="preloader">
+					<div class="preloader"></div>
+				</div>
+				<div class="main-slider" id="main-slider">
+
+					<!--== Main Slider ==-->
+					<ul class="slides">
+						<li><img src="/images/bg01.jpg" alt="Slide Image"/></li>
+					</ul>
+
+				</div>
+			</div>
+		</header>
+
+		<div class="content">
+			<div class="container box">
+
+
+				<!--===============================-->
+				<!--== Features ===================-->
+				<!--===============================-->
+				<section id="features" class="row">
+					<div class="col-md-3 col-xs-6">
+						<div class="event-info">
+							<div class="icon fa fa-map-marker"></div>
+							<div class="info">
+								<h3>Wrocław</h3>
+								<span>PGS Software, Klecińska 123</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="event-info">
+							<div class="icon fa fa-calendar"></div>
+							<div class="info">
+								<h3>25 marca</h3>
+								<span>2017</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="event-info">
+							<div class="icon fa fa-microphone"></div>
+							<div class="info">
+								<h3>Piotr Gankiewicz</h3>
+								<!-- <span></span> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="event-info">
+							<div class="icon fa fa-users"></div>
+							<div class="info">
+								<h3>20 miejsc</h3>
+								<span>Pośpiesz się!</span>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--==========-->
+
+
+				<!--===============================-->
+				<!--== About  =====================-->
+				<!--===============================-->
+				<section id="about" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-left">
+							<h2>Podstawy C# oraz .NET core</h2>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						Warsztaty programowania wprowadzające w najnowszą wersję języka C# oraz platformy .NET Core w wersji 1.1, która została udostępniona w ubiegłym roku przez Microsoft jako rozwiązanie open-source oraz cross-platform tzn. działające na dowolnym systemie operacyjnym.
+					</div>
+				</section>
+				<!--==========-->
+
+				<!--===============================-->
+				<!--== Schedule ===================-->
+				<!--===============================-->
+				<section id="schedule" class="row">
+					<div class="col-md-6 col-sm-12">
+						<h2>Agenda</h2>
+						<ol>
+							<li>Wprowadzenie do platformy .NET Core - czym jest i co nam daje.</li>
+							<li>Czym jest C# oraz jak jest kompilowany i uruchamiany kod źródłowy.</li>
+							<li>Definiowanie zmiennych, metod, klas oraz ich poprawne modelowanie.</li>
+							<li>Dziedziczenie, polimorfizm, interfejsy i dążenie do abstrakcji.</li>
+							<li>Typy generyczne, wyjątki, obsługa błędów, słowo kluczowe var.</li>
+							<li>Delegaty oraz wyrażenia lambda, zdarzenia (events).</li>
+							<li>Extension methods (metody rozszerzające).</li>
+							<li>IEnumerable, IQueryable, yield oraz LINQ.</li>
+							<li>Mechanizm refleksji, typy dynamiczne (dynamic).</li>
+							<li>Asynchroniczność oraz wielowątkowość.</li>
+						</ol>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<h2>Wymagania</h2>
+						<ol>
+							<li>Laptop z dowolnym systemem operacyjnym (Windows, Linux, Mac).</li>
+							<li>Zainstalowane środowisko .NET Core https://www.microsoft.com/net/core</li>
+							<li>Upewnienie się, że .NET Core działa poprawnie poprzez stworzenie oraz uruchomienie aplikacji typu “Hello World” z użyciem dotnet CLI https://docs.microsoft.com/en-us/dotnet/articles/core/tools/</li>
+							<li>
+							<li>Wybrane środowisko do pisania kodu np. 
+								<ol>
+									<li>https://www.visualstudio.com</li>
+									<li>https://code.visualstudio.com (tego ja używam)</li>
+									<li>https://www.jetbrains.com/rider</li>
+									<li>Dowolny inny edytor tekstowy (Sublime, Atom, Brackets, Vim itp.). W przypadku VS Code zainstalować rozszerzenie C# http://www.omnisharp.net</li>
+								</ol>
+							<li>Podstawowa znajomość teorii programowania - zmienne, klasy, metody itd.</li>
+						</ol>
+						<h2>Należy pamiętać o</h2>
+						<ul>
+							<li>BYOD - Bring Your Own Device.</li>
+							<li>Piwo we własnym zakresie.</li>
+						    <li>Uśmiech, poczucie humoru czy też chęć nauki - we własnym zakresie.</li>
+							<li>Resztę postaramy się dostarczyć :)</li>
+						</ul>
+					</div>
+				</section>
+				<!--==========-->
+
+
+
+
+				<!--===============================-->
+				<!--== Speakers ===================-->
+				<!--===============================-->
+				<section id="speakers" class="row separated">
+					<div class="col-sm-12">
+						<div class="section-header text-center">
+							<h2>Prelegent</h2>
+							<h4>Nasz wykładowca ;)</h4>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="speaker">
+							<div class="speaker-info">
+								<div class="speaker-photo">
+									<img src="/images/speakers/piotr-gankiewicz.png" alt="Piotr Gankiewicz">
+								</div>
+								<div class="speaker-contacts">
+									<a href="http://piotrgankiewicz.com" target="_blank" class="contact pull-left fa fa-globe"></a>
+									<a href="https://twitter.com/spetzu" target="_blank" class="contact pull-right fa fa-twitter"></a>
+								</div>									
+							</div>
+							<h3><a href="/prelegenci/piotr-gankiewicz/">Piotr Gankiewicz</a></h3>
+							<p>Inżynier oraz architekt oprogramowania z 6 letnim doświadczeniem, kontrybutor open source, bloger &amp; vloger, członek krakowskiej grupy .NET.
+</p>
+							<p>
+							<a href="/prelegenci/piotr-gankiewicz/">więcej...</a>
+							</p>
+						</div>
+					</div>
+				</section>
+				<!--==========-->
+
+
+
+				<!--===============================-->
+				<!--== FAQ ========================-->
+				<!--===============================-->
+				<section id="faq" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-right">
+							<h2>F.A.Q</h2>
+							<h4>To co chcielibyście wiedzieć a boicie się zapytać ;)</h4>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<p>
+						Jest to skrócona wersja FAQ, by przeczytać pełną i dowiedzieć się więcej o idei stojącej za devWarsztatami, zapraszamy na stronę <a href="/faq/">FAQ</a>.
+						</p>
+					</div>
+					<div class="col-sm-6">
+						<ul class="accordion-group">
+						    <li class="accordion">
+						        <a class="accordion-heading">
+						        	<h4 class="accordion-title">Czy to jest darmowy event ?</h4>
+						        	<span class="fa fa-plus-circle pull-right"></span>
+						        </a>
+						        <div class="accordion-body">
+						        	Tak! nie licząc obiadu i piwa, wszystko inne jest zorganizowane - zazwyczaj, chyba, że w opisie spotkania jest napisane inaczej, czasami obiad może być sponsorowany, a czasami może nawet i piwo.
+						        </div>
+						    </li>
+						    <li class="accordion">
+						        <a class="accordion-heading">
+						        	<h4 class="accordion-title">Czy mogę przyjść bez komputera ?</h4>
+						        	<span class="fa fa-plus-circle pull-right"></span>
+						        </a>
+						        <div class="accordion-body">
+						        	Tak, ale będziesz się trochę nudził. Większość sesji ma w sobie warsztaty, więc wtedy będziesz po prostu siedział i... pił kawę? :)
+						        </div>
+						    </li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<ul class="accordion-group">
+						    <li class="accordion">
+						        <a class="accordion-heading">
+						        	<h4 class="accordion-title">Co muszę mieć ze zobą?</h4>
+						        	<span class="fa fa-plus-circle pull-right"></span>
+						        </a>
+						        <div class="accordion-body">
+						        	Komputer, plus potwierdzenie rejestracji.
+						        </div>
+						    </li>
+						    <li class="accordion">
+						        <a class="accordion-heading">
+						        	<h4 class="accordion-title">Czy jakoś muszę skonfigurować swój komputer?</h4>
+						        	<span class="fa fa-plus-circle pull-right"></span>
+						        </a>
+						        <div class="accordion-body">
+						        	Nie, ale fajnie jakbyś ściągnął odpowiednie narzędzia z maila który zostanie wysłany na kilka dni przed spotkaniem.
+						        </div>
+						    </li>
+						</ul>
+					</div>
+				</section>
+				<!--==========-->
+
+
+
+				<!--===============================-->
+				<!--== Carousel ===================-->
+				<!--===============================-->
+				<section id="partners" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-center">
+							<h2>Sponsorzy</h2>
+							<h4>Gdyby nie oni, spotkanie nie doszłoby do skutku, dziękujemy.</h4>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="col-sm-12">
+				
+						<a href="http://pgssoftware.pl" target="_blank"><img src="/images/sponsors/pgs-software-logo.png" alt="PGS Software"></a>
+						
+						<a href="http://jetbrains.com" target="_blank"><img src="/images/sponsors/jetbrains-logo.png" alt="JetBrains"></a>
+						<a href="https://www.manning.com" target="_blank"><img src="/images/sponsors/manning-logo.jpg" alt="Manning"></a>
+							
+					</div>
+					</div>
+				</section>
+				<!--==========-->
+
+
+
+				<!--===============================-->
+				<!--== Pricing Tables =============-->
+				<!--===============================-->
+				<!-- <section id="prices" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-left">
+							<h2>Pricing Tables</h2>
+							<h4>Awesome section description goes here.</h4>
+						</div>
+					</div>
+					<ul class="col-sm-3 pricing-features">
+						<li>Seat</li>
+						<li>Coffe Break</li>
+						<li>Certificate</li>
+					</ul>
+					<div class="col-md-3 col-sm-4">
+						<div class="pricing-table">
+							<h3 class="table-title">Silver</h3>
+							<div class="table-price">$99</div>
+							<ul class="table-features">
+								<li class="fa fa-check-circle"><span>Seat</span></li>
+								<li class="fa fa-minus-circle"><span>Coffe Break</span></li>
+								<li class="fa fa-minus-circle"><span>Certificate</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4">
+						<div class="pricing-table">
+							<h3 class="table-title">Gold</h3>
+							<div class="table-price">$199</div>
+							<ul class="table-features">
+								<li class="fa fa-check-circle"><span>Seat</span></li>
+								<li class="fa fa-check-circle"><span>Coffe Break</span></li>
+								<li class="fa fa-minus-circle"><span>Certificate</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4">
+						<div class="pricing-table">
+							<h3 class="table-title">Platinum</h3>
+							<div class="table-price">$299</div>
+							<ul class="table-features">
+								<li class="fa fa-check-circle"><span>Seat</span></li>
+								<li class="fa fa-check-circle"><span>Coffe Break</span></li>
+								<li class="fa fa-check-circle"><span>Certificate</span></li>
+							</ul>
+						</div>
+					</div>
+				</section> -->
+				<!--==========-->
+
+
+				<!--===============================-->
+				<!--== Register ===================-->
+				<!--===============================-->
+				<section id="register" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-center">
+							<h2>Rejestracja</h2>
+							<h4>Rejestracja na spotkanie poprzez portal <a href="https://www.meetup.com/devWarsztaty/events/238345235/">Meetup</a>.</h4>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="form">
+							<div class="col-sm-12">
+								<input type="submit" value="Zarejestruj się" name="submit" id="register-btn">
+								<!-- <a href="https://www.meetup.com/devWarsztaty/events/236972265/"
+									class="btn-local btn-submit" role="button">
+									Zarejestruj się
+								</a> -->
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--==========-->
+
+				<div id="gotop" class="gotop fa fa-arrow-up"></div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div id="map_canvas"></div>
+			
+			<div class="footer">
+				<div class="container box">
+
+					<section id="info" class="row">
+						<div class="col-sm-8">
+
+							<!--== Social Icons ==-->
+							<ul class="social-icons">
+								<li><a href="https://facebook.com/devWarsztaty" title="Facebook Fan Page" class="fa fa-facebook"></a></li>
+								<li><a href="https://twitter.com/devWarsztaty" title="Twitter" class="fa fa-twitter"></a></li>
+								<li><a href="http://www.meetup.com/devWarsztaty/" title="Meetup Group" class="fa fa-users"></a></li>
+							</ul>
+
+						</div>
+						<div class="col-sm-4 text-right">
+							<div class="copyrights">
+								All Rights Reserved. © <a href="http://devWarsztaty.pl">devWarsztaty</a> 2017
+							</div>
+						</div>
+					</section>
+
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<!-- build:js -->
+		<script src="/js/jquery-2.1.0.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/jquery.scrollTo.js"></script>
+		<script src="/js/jquery.nav.js"></script>
+		<script src="/js/owl.carousel.min.js"></script>
+		<script src="/js/jquery.flexslider.js"></script>
+		<script src="/js/jquery.accordion.js"></script>
+		<script src="/js/jquery.placeholder.js"></script>
+		<script src="/js/jquery.fitvids.js"></script>
+		<script src="/js/gmap3.js"></script>
+		<script src="/js/fancySelect.js"></script>
+		<script src="/js/main.js"></script>
+		<!-- endbuild -->
+		<script>
+		var venueAddress = 'PGS Software, Klecińska 123, Wrocław, Poland'; // Venue
+
+		$('#register-btn').click(function(evt) {
+                evt.preventDefault();
+                window.location = 'https://www.meetup.com/devWarsztaty/events/238345235/';
+            });
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4831504-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>
