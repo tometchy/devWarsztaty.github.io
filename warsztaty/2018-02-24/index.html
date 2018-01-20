@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>devWarsztaty - 39 - Microservice development (with examples in NServiceBus) </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<meta name="description" content="Go beyond the hype and build a solid foundation of theory and practice with this workshop on Microservice development. ">
+
+<meta property="og:image" content="http://devWarsztaty.pl/images/general/microservices.png">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Microservice development (with examples in NServiceBus) ">
+<meta property="og:description" content="Go beyond the hype and build a solid foundation of theory and practice with this workshop on Microservice development. ">
+<meta property="og:url" content="http://devWarsztaty.pl/warsztaty/2018-02-24">
+<meta property="og:site_name" content="devWarsztaty">
+<meta property="article:publisher" content="https://www.facebook.com/devWarsztaty">
+<meta property="fb:admins" content="1077660901">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Go beyond the hype and build a solid foundation of theory and practice with this workshop on Microservice development. ">
+<meta name="twitter:title" content="Microservice development (with examples in NServiceBus) ">
+<meta name="twitter:site" content="@devWarsztaty">
+<meta name="twitter:creator" content="@devWarsztaty">
+<meta name="twitter:domain" content="devWarsztaty">
+<meta name="twitter:image:src" content="http://devWarsztaty.pl/images/general/microservices.png">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+		<!-- build:css -->
+		<link href="/css/bootstrap.css" rel="stylesheet" media="screen">
+		<link href="/css/style.css" rel="stylesheet" media="screen">
+		<link href="/css/animate.min.css" rel="stylesheet" media="screen">
+		<link href="/css/font-awesome.css" rel="stylesheet" media="screen">
+		<link href="/css/owl.carousel.css" rel="stylesheet" media="screen">
+		<link href="/css/flexslider.css" rel="stylesheet" media="screen">
+		<link href="/css/fancySelect.css" rel="stylesheet" media="screen">
+		<link href="/css/responsive.css" rel="stylesheet" media="screen">
+		<!-- endbuild -->
+
+		<!--== Google Fonts ==-->
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
+
+		<link rel="canonical" href="http://devWarsztaty.pl/warsztaty/2018-02-24">
+	</head>
+	<body>
+		<header id="header">
+			<div id="menu" class="header-menu fixed">
+				<div class="container box">
+					<div class="row">
+						<nav role="navigation" class="col-sm-12">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+
+								<!--== Logo ==-->
+								<span class="navbar-brand logo">
+									<span class="fa fa-map-marker"></span>devWarsztaty
+								</span>
+
+							</div>
+							<div class="navbar-collapse collapse">
+
+								<!--== Navigation Menu ==-->
+								<ul class="nav navbar-nav">
+									<li class="current"><a href="#header">Home</a></li>
+									<li><a href="#about">About worshop</a></li>
+									<!-- <li><a href="#schedule">Agenda</a></li> -->
+									<li><a href="#speakers">Speakers</a></li>
+									<li><a href="#faq">FAQ</a></li>
+									<li><a href="#partners">Sponsors</a></li>
+									<li><a href="#register">Registration!</a></li>
+								</ul>
+
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<!--== Site Description ==-->
+			<div class="header-cta">
+				<div class="container">
+					<div class="row">
+						<div class="blk">
+							<h1>Microservice development (with examples in NServiceBus)</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="blk">
+							<input type="submit" value="Register" name="submit" id="goregister">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-bg">
+				<div id="preloader">
+					<div class="preloader"></div>
+				</div>
+				<div class="main-slider" id="main-slider">
+
+					<!--== Main Slider ==-->
+					<ul class="slides">
+						<li><img src="/images/bg01.jpg" alt="Slide Image"/></li>
+					</ul>
+
+				</div>
+			</div>
+		</header>
+
+		<div class="content">
+			<div class="container box">
+
+
+				<!--===============================-->
+				<!--== Features ===================-->
+				<!--===============================-->
+				<section id="features" class="row">
+					<div class="col-md-3 col-xs-6">
+						<div class="event-info">
+							<div class="icon fa fa-map-marker"></div>
+							<div class="info">
+								<h3>Krakow</h3>
+								<span>Codecool Poland<br/>Ślusarska 9 </span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="event-info">
+							<div class="icon fa fa-calendar"></div>
+							<div class="info">
+								<h3>24th of Feb</h3>
+								<span>2018</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="event-info">
+							<div class="icon fa fa-microphone"></div>
+							<div class="info">
+								<h3>2 speakers</h3>
+								<!-- <span></span> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<div class="event-info">
+							<div class="icon fa fa-users"></div>
+							<div class="info">
+								<h3>30 spots</h3>
+								<span>Hurry Up!</span>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--==========-->
+
+
+				<!--===============================-->
+				<!--== About  =====================-->
+				<!--===============================-->
+				<section id="about" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-left">
+							<h2>Microservice development (with examples in NServiceBus)</h2>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<p>
+						Go beyond the hype and build a solid foundation of theory and practice with this workshop on Microservice development. Join us for a one-day deep-dive covering architectural topics like:
+</p>
+<ul>
+	<li>UI decomposition</li>
+	<li>Data ownership across the enterprise</li>
+	<!-- <li>How to choose NOSQL databases for your Microservices</li> -->
+	</ul>					
+<p>
+	You’ll also learn the nitty-gritty details of building production ready Microservices including:
+	</p>
+<ul>
+	<li>Fault tolerance – HTTP and Queues</li>
+	<li>Reliable integration with 3rd party systems</li>
+	<li>Monitoring, High Availability, and versioning</li>
+	
+	</ul>	
+<p>
+	Finally, get some hands-on experience in Microservice development using NServiceBus for building:
+</p>
+<ul>
+<li>Scalable command-processing endpoints</li>
+<li>Publish/subscribe event-processing interactions</li>
+<li>Long-running multi-stage business processes and policies</li>
+</ul>
+					</div>
+				</section>
+				<!--==========-->
+
+				<!--===============================-->
+				<!--== Schedule ===================-->
+				<!--===============================-->
+				<section id="schedule" class="row">
+					<!-- <div class="col-md-6 col-sm-12">
+						<h2>Agenda</h2>
+						<ol>
+<li>Stworzenie systemu rozproszonego na zasadzie API + serwis, komunikujący się za
+pomocą szyny danych RabbitMQ.</li>
+<li>Zbudowanie własnego obrazu za pomocą Dockera, a następnie wykorzystanie
+narzędzia docker-compose.</li>
+<li>Wykorzystanie Docker Hub oraz Travis CI w celu wdrożenia aplikacji na maszynę
+wirtualną.</li>
+<li>Konfiguracja Rancher do zarządzania infrastrukturą kontenerów.</li>
+</ol>
+					</div> -->
+					<div class="col-md-12 col-sm-12">
+						<h2>Prerequisite</h2>
+						<p><strong>Please make sure</strong> you prepare your machine before your 'Microservice development' workshop, by following the instruction on <strong><a href="https://github.com/Particular/Workshop.Microservices/blob/master/README.md">GitHub page</a></strong>.</p>
+						<p><strong>Your time</strong> during the workshop is valuable, and we want to use it for learning, rather than setting up machines.</p>
+						<h2>Remember about</h2>
+						<ul>
+							<li>BYOD - Bring Your Own Device.</li>
+							<li>Beer is on you</li>
+							<li>Bring smile and positive attitude and willingness to learn :)</li>
+							<li>Rest is on us :)</li>
+						</ul>
+					</div>
+				</section>
+				<!--==========-->
+
+
+
+
+				<!--===============================-->
+				<!--== Speakers ===================-->
+				<!--===============================-->
+				<section id="speakers" class="row separated">
+					<div class="col-sm-12">
+						<div class="section-header text-center">
+							<h2>Speakers</h2>
+							<h4>our heroes! ;)</h4>
+						</div>
+					</div>
+
+					<div class="col-sm-6">
+						<div class="speaker">
+						
+							<div class="speaker-info">
+								<div class="speaker-photo">
+									<img src="/images/speakers/tomasz-masternak.jpg" alt="Tomasz Masternak">
+								</div>		
+								<div class="speaker-contacts">
+									<a href="https://www.linkedin.com/in/tomek-masternak-9142602/" target="_blank" class="contact pull-left fa fa-linkedin"></a>
+
+									<a href="https://twitter.com/Masternak" target="_blank" class="contact pull-right fa fa-twitter"></a>
+									
+								</div>						
+							</div>
+							<h3><a href="/prelegenci/tomasz-masternak/">Tomasz Masternak</a></h3>
+							<p>Tomek is an engineer at <a href="https://particular.net/">Particular Software</a> where he works on building messaging platform for *-service-oriented systems.</p>
+							<p>
+							<a href="/prelegenci/tomasz-masternak/">more...</a>
+							</p>
+						</div>
+					</div>
+					
+					<!-- <div class="col-sm-6">
+						<div class="speaker">
+						
+							<div class="speaker-info">
+								<div class="speaker-photo">
+									<img src="/images/speakers/marcin-hoppe.jpg" alt="Marcin Hoppe">
+								</div>		
+								<div class="speaker-contacts">
+									<a href="https://www.linkedin.com/in/marcinhoppe/" target="_blank" class="contact pull-left fa fa-linkedin"></a>
+									<a href="https://twitter.com/marcin_hoppe" target="_blank" class="contact pull-right fa fa-twitter"></a>
+								</div>						
+							</div>
+							<h3><a href="/prelegenci/marcin-hoppe/">Marcin Hoppe</a></h3>
+							<p>Marcin is a software engineer at <a href="https://particular.net/">Particular Software</a>, makers of NServiceBus.</p>
+							<p>
+							<a href="/prelegenci/marcin-hoppe/">more...</a>
+							</p>
+						</div>
+					</div> -->
+
+					
+					<div class="col-sm-6">
+													<div class="speaker">
+							
+								<div class="speaker-info">
+									<div class="speaker-photo">
+										<img src="/images/speakers/szymon-pobiega.jpg" alt="Szymon Pobiega">
+									</div>		
+									<div class="speaker-contacts">
+										<a href="http://simon-says-architecture.com/" target="_blank" class="contact pull-left fa fa-globe"></a>
+										<a href="https://twitter.com/SzymonPobiega" target="_blank" class="contact pull-right fa fa-twitter"></a>
+									</div>						
+								</div>
+								<h3><a href="/prelegenci/szymon-pobiega/">Szymon Pobiega</a></h3>
+								<p>Used to build various kinds of custom software systems, from banks and airlines to bitcoin exchanges, only to figure out his true passion lies in the stuff that is hidden from user's eyes -- the infrastructure on which the business software runs.</p>
+								<p>
+								<a href="/prelegenci/szymon-pobiega/">more...</a>
+								</p>
+							</div>
+					</div>
+
+					
+				</section>
+				<!--==========-->
+
+
+
+				<!--===============================-->
+				<!--== FAQ ========================-->
+				<!--===============================-->
+				<section id="faq" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-right">
+							<h2>F.A.Q</h2>
+							<h4>Everything you want to know ;)</h4>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<p>
+						This is a short version of FAQ that is avaliable <a href="/faq/">here</a>.
+						</p>
+					</div>
+					<div class="col-sm-6">
+						<ul class="accordion-group">
+						    <li class="accordion">
+						        <a class="accordion-heading">
+						        	<h4 class="accordion-title">Is this event free?</h4>
+						        	<span class="fa fa-plus-circle pull-right"></span>
+						        </a>
+						        <div class="accordion-body">
+						        	Yes, only beer and hardware is not provided, rest is on us.
+						        </div>
+						    </li>
+						    <li class="accordion">
+						        <a class="accordion-heading">
+						        	<h4 class="accordion-title">Can I come without computer?</h4>
+						        	<span class="fa fa-plus-circle pull-right"></span>
+						        </a>
+						        <div class="accordion-body">
+						        	Not on this one mate, not on this one.
+						        </div>
+						    </li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<ul class="accordion-group">
+						    <li class="accordion">
+						        <a class="accordion-heading">
+						        	<h4 class="accordion-title">What I need to have with me?</h4>
+						        	<span class="fa fa-plus-circle pull-right"></span>
+						        </a>
+						        <div class="accordion-body">
+						        	Computer, sometimes your ID card (required by security guys) and positive attitude :)
+						        </div>
+						    </li>
+						    <li class="accordion">
+						        <a class="accordion-heading">
+						        	<h4 class="accordion-title">Do I need to configure computer in some special way?</h4>
+						        	<span class="fa fa-plus-circle pull-right"></span>
+						        </a>
+						        <div class="accordion-body">
+						        	Yes, you need prepare computer for a workshop. Follow instruction on <a href="https://github.com/Particular/Workshop.Microservices/blob/master/README.md">GitHub</a>.
+						        </div>
+						    </li>
+						</ul>
+					</div>
+				</section>
+				<!--==========-->
+
+
+
+				<!--===============================-->
+				<!--== Carousel ===================-->
+				<!--===============================-->
+				<section id="partners" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-center">
+							<h2>Sponsors</h2>
+							<h4>Without them, event would not had happened, thank you!</h4>
+						</div>
+					</div>
+					<div class="col-sm-12">
+				
+						<div id="carousel" class="owl-carousel">
+								
+							<div class="item" style="height: 55px">
+								<a href="https://codecool.com" target="_blank"><img src="/images/sponsors/codecool-logo.png" alt="Codecool"></a>
+							</div>
+							<div class="item" style="height: 55px">
+								<a href="http://www.enova.pl/" target="_blank"><img src="/images/sponsors/enova365-logo.png" alt="enova 365"></a>
+							</div>
+
+							<div class="item" style="height: 55px">
+								<a href="https://particular.net/" target="_blank"><img height="45" src="/images/sponsors/particularnet-logo.png" alt="Particular"></a>
+							</div>
+							<div class="item" style="height: 55px; background: transparent">
+								<a href="http://jetbrains.com"  target="_blank"><img src="/images/sponsors/jetbrains-logo.png" alt="JetBrains"></a>
+							</div>
+							
+								<div class="item" style="height: 55px; background: transparent">
+								<a href="https://www.manning.com"  target="_blank"><img src="/images/sponsors/manning-logo.jpg" width="240" alt="Manning"></a>
+							</div>
+						</div>
+						<div class="owl-carousel-navigation">
+							<a class="owl-btn prev fa fa-angle-left"></a>
+							<a class="owl-btn next fa fa-angle-right"></a>
+						</div>
+
+
+						
+						
+						
+
+						
+						
+							
+					</div>
+				</section>
+				<!--==========-->
+
+
+
+				<!--===============================-->
+				<!--== Pricing Tables =============-->
+				<!--===============================-->
+				<!-- <section id="prices" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-left">
+							<h2>Pricing Tables</h2>
+							<h4>Awesome section description goes here.</h4>
+						</div>
+					</div>
+					<ul class="col-sm-3 pricing-features">
+						<li>Seat</li>
+						<li>Coffe Break</li>
+						<li>Certificate</li>
+					</ul>
+					<div class="col-md-3 col-sm-4">
+						<div class="pricing-table">
+							<h3 class="table-title">Silver</h3>
+							<div class="table-price">$99</div>
+							<ul class="table-features">
+								<li class="fa fa-check-circle"><span>Seat</span></li>
+								<li class="fa fa-minus-circle"><span>Coffe Break</span></li>
+								<li class="fa fa-minus-circle"><span>Certificate</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4">
+						<div class="pricing-table">
+							<h3 class="table-title">Gold</h3>
+							<div class="table-price">$199</div>
+							<ul class="table-features">
+								<li class="fa fa-check-circle"><span>Seat</span></li>
+								<li class="fa fa-check-circle"><span>Coffe Break</span></li>
+								<li class="fa fa-minus-circle"><span>Certificate</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4">
+						<div class="pricing-table">
+							<h3 class="table-title">Platinum</h3>
+							<div class="table-price">$299</div>
+							<ul class="table-features">
+								<li class="fa fa-check-circle"><span>Seat</span></li>
+								<li class="fa fa-check-circle"><span>Coffe Break</span></li>
+								<li class="fa fa-check-circle"><span>Certificate</span></li>
+							</ul>
+						</div>
+					</div>
+				</section> -->
+				<!--==========-->
+
+
+				<!--===============================-->
+				<!--== Register ===================-->
+				<!--===============================-->
+				<section id="register" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-center">
+							<h2>Registration</h2>
+							<h4>Register on <a href="https://www.meetup.com/devWarsztaty/events/246998768/">Meetup</a>.</h4>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="form">
+							<div class="col-sm-12">
+								<input type="submit" value="Register!" name="submit" id="register-btn">
+								<!-- <a href="https://www.meetup.com/devWarsztaty/events/236972265/"
+									class="btn-local btn-submit" role="button">
+									Zarejestruj się
+								</a> -->
+							</div>
+						</form>
+					</div>
+				</section>
+				<!--==========-->
+
+				<div id="gotop" class="gotop fa fa-arrow-up"></div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div id="map_canvas"></div>
+			
+			<div class="footer">
+				<div class="container box">
+
+					<section id="info" class="row">
+						<div class="col-sm-8">
+
+							<!--== Social Icons ==-->
+							<ul class="social-icons">
+								<li><a href="https://facebook.com/devWarsztaty" title="Facebook Fan Page" class="fa fa-facebook"></a></li>
+								<li><a href="https://twitter.com/devWarsztaty" title="Twitter" class="fa fa-twitter"></a></li>
+								<li><a href="http://www.meetup.com/devWarsztaty/" title="Meetup Group" class="fa fa-users"></a></li>
+							</ul>
+
+						</div>
+						<div class="col-sm-4 text-right">
+							<div class="copyrights">
+								All Rights Reserved. © <a href="http://devWarsztaty.pl">devWarsztaty</a> 2017
+							</div>
+						</div>
+					</section>
+
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<!-- build:js -->
+		<script src="/js/jquery-2.1.0.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/jquery.scrollTo.js"></script>
+		<script src="/js/jquery.nav.js"></script>
+		<script src="/js/owl.carousel.min.js"></script>
+		<script src="/js/jquery.flexslider.js"></script>
+		<script src="/js/jquery.accordion.js"></script>
+		<script src="/js/jquery.placeholder.js"></script>
+		<script src="/js/jquery.fitvids.js"></script>
+		<script src="/js/gmap3.js"></script>
+		<script src="/js/fancySelect.js"></script>
+		<script src="/js/main.js"></script>
+		<!-- endbuild -->
+		<script>
+		var venueAddress = 'Predica, Altowa 2, Warsaw, Poland'; // Venue
+
+		$('#register-btn').click(function(evt) {
+                evt.preventDefault();
+                window.location = 'https://www.meetup.com/devWarsztaty/events/246998768/';
+            });
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4831504-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>
