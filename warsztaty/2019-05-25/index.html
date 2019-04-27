@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>devWarsztaty - Event Storming - jak szybko odkrywać nieznane</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta name="description" content="Event Storming jest lekką techniką do zespołowego odkrywania i modelowania złożonych domen biznesowych i problemów.">
+
+	<meta property="og:locale" content="pl_PL">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="devWarsztaty - Event Storming - jak szybko odkrywać nieznane">
+	<meta property="og:description" content="Event Storming jest lekką techniką do zespołowego odkrywania i modelowania złożonych domen biznesowych i problemów.">
+	<meta property="og:url" content="http://devWarsztaty.pl/warsztaty/2018-09-29/">
+	<meta property="og:site_name" content="devWarsztaty">
+	<meta property="article:publisher" content="https://www.facebook.com/devWarsztaty">
+	<meta property="fb:admins" content="1077660901">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:description" content="Event Storming jest lekką techniką do zespołowego odkrywania i modelowania złożonych domen biznesowych i problemów.">
+	<meta name="twitter:title" content="devWarsztaty - Event Storming - jak szybko odkrywać nieznane">
+	<meta name="twitter:site" content="@devWarsztaty">
+	<meta name="twitter:creator" content="@devWarsztaty">
+	<meta name="twitter:domain" content="devWarsztaty">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- build:css -->
+	<link href="/css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="/css/style.css" rel="stylesheet" media="screen">
+	<link href="/css/animate.min.css" rel="stylesheet" media="screen">
+	<link href="/css/font-awesome.css" rel="stylesheet" media="screen">
+	<link href="/css/owl.carousel.css" rel="stylesheet" media="screen">
+	<link href="/css/flexslider.css" rel="stylesheet" media="screen">
+	<link href="/css/fancySelect.css" rel="stylesheet" media="screen">
+	<link href="/css/responsive.css" rel="stylesheet" media="screen">
+	<!-- endbuild -->
+
+	<!--== Google Fonts ==-->
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
+
+	<link rel="canonical" href="http://devWarsztaty.pl/warsztaty/2019-05-25/">
+</head>
+
+<body>
+	<header id="header">
+		<div id="menu" class="header-menu fixed">
+			<div class="container box">
+				<div class="row">
+					<nav role="navigation" class="col-sm-12">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<!--== Logo ==-->
+							<span class="navbar-brand logo">
+								<span class="fa fa-map-marker"></span>devWarsztaty
+							</span>
+
+						</div>
+						<div class="navbar-collapse collapse">
+
+							<!--== Navigation Menu ==-->
+							<ul class="nav navbar-nav">
+								<li class="current">
+									<a href="#header">Home</a>
+								</li>
+								<li>
+									<a href="#about">O warsztatach</a>
+								</li>
+								<li>
+									<a href="#speakers">Prelegent</a>
+								</li>
+								<li>
+									<a href="#faq">FAQ</a>
+								</li>
+								<li>
+									<a href="#partners">Sponsorzy</a>
+								</li>
+								<li>
+									<a href="#register">Rejestracja</a>
+								</li>
+							</ul>
+
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<!--== Site Description ==-->
+		<div class="header-cta">
+			<div class="container">
+				<div class="row">
+					<div class="blk">
+						<h1>Event Storming - jak szybko odkrywać nieznane</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="blk">
+						<input type="submit" value="Zarejestruj się" name="submit" id="goregister">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bg">
+			<div id="preloader">
+				<div class="preloader"></div>
+			</div>
+			<div class="main-slider" id="main-slider">
+
+				<!--== Main Slider ==-->
+				<ul class="slides">
+					<li>
+						<img src="/images/bg01.jpg" alt="Slide Image" />
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</header>
+
+	<div class="content">
+		<div class="container box">
+
+
+			<!--===============================-->
+			<!--== Features ===================-->
+			<!--===============================-->
+			<section id="features" class="row">
+				<div class="col-md-3 col-xs-6">
+					<div class="event-info">
+						<div class="icon fa fa-map-marker"></div>
+						<div class="info">
+							<h3>Kraków</h3>
+								<span>zooplus<br/>Prądnicka 20A </span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<div class="event-info">
+						<div class="icon fa fa-calendar"></div>
+						<div class="info">
+							<h3>25 maja</h3>
+							<span>2019</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<div class="event-info">
+						<div class="icon fa fa-microphone"></div>
+						<div class="info">
+							<h3>2 prelegentów</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<div class="event-info">
+						<div class="icon fa fa-users"></div>
+						<div class="info">
+							<h3>18 miejsc</h3>
+							<span>Pospiesz się!</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--==========-->
+			<!--===============================-->
+			<!--== About  =====================-->
+			<!--===============================-->
+			<section id="about" class="row">
+				<div class="col-sm-12">
+					<div class="section-header text-left">
+						<h2>Event Storming - jak szybko odkrywać nieznane</h2>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<h3>Cel warsztatu</h3>
+					<hr />
+					<p>
+						Event Storming jest lekką techniką do zespołowego 
+						odkrywania i modelowania złożonych domen biznesowych 
+						i problemów. Wykorzystując to, że rozmawiając z szeroko 
+						pojętym biznesem o istotnych zdarzeniach zachodzących w 
+						domenie, czyli eventach, możemy modelować i wizualizować 
+						nie tylko sam flow logiki biznesowej dowolnego procesu, 
+						ale również bardziej złożone byty. Event Storming to także 
+						platforma komunikacji i transferu wiedzy w zespole, której 
+						użycie pozwala na implementację właściwie zrozumianego 
+						problemu, zamiast przybliżeń i niespełnionych założeń - co 
+						zbyt często zdarza się w wielu projektach. W końcu software 
+						development to proces ciągłego uczenia się, a produkowany 
+						przez nas działający kod jest efektem pobocznym…
+					</p>
+					<p>
+						W trakcie warsztatów przejdziemy przez dwa najczęściej 
+						stosowane narzędzia Event Stormingu - Big Picture oraz 
+						Design Level. Pokażemy Wam też, jak łączyć te techniki z 
+						innymi praktykami stosowanymi w projektowaniu i tworzeniu 
+						oprogramowania, jak na przykład CQRS, Event Sourcing, BDD, 
+						UX, projektowaniem architektury, pracą z danymi i metrykami 
+						i innymi.
+					</p>
+					<h3>Opis warsztatu</h3>
+					<hr />
+					<p>
+						Warsztat będzie się podzielony na 2 części, każda z nich 
+						zajmie około 3h. Najpierw przejdziemy przez tzw. Big Picture 
+						Event Storming, gdzie zaprezentujemy Wam świetne i lekkie 
+						narzędzie do ogólnego mapowania procesów biznesowych, 
+						zapoznamy się z jego etapami dzieląc się z Wami naszym 
+						praktycznym doświadczeniem, wskazówkami i technikami. 
+						Następnie rozpoczniemy Design Level, który pozwala na 
+						zaprojektowanie technicznego rozwiązania naszego problemu w 
+						bardzo lekki i zwinny sposób, który dodatkowo pozwala się 
+						skupić na najważniejszych aspektach rozwiązania.
+					</p>
+					<p>
+						Każdy etap będzie zawierać mniejsze części, które chętnie 
+						osobno omówimy i podsumujemy. 
+					</p>
+					<h3>Adresaci warsztatu</h3>
+					<hr />
+					<p>
+						Grupą docelową warsztatu są osoby z pogranicza technologii 
+						i produktów informatycznych – architekci, programiści, analitycy 
+						biznesowi, osoby zajmujące się UX, testerzy, Scrum Masterzy. 
+						Szczególnie zapraszamy te osoby, które szukają bardziej optymalnych 
+						sposobów na odkrywanie, wizualizowanie i rozwiązywanie problemów 
+						z jakimi się zmagają, szczególnie w zakresie określania zakresów 
+						projektów, jak i głębokiego zrozumienia potrzeb biznesowych.						
+					</p>
+					<p>
+						Niezmienną rzeczą naszych spotkań oczywiście jest:
+					</p>
+					<ul>
+						<li>Kawa - dostępna na miejscu</li>
+						<li>Obiad - pizza sponsorowana przez <a href="https://techzooplus.com/" target="_blank">zooplus</a> i <a href="https://www.enova365.pl/" target="_blank">enova365</a>.</li>
+					</ul>
+				</div>
+			</section>
+
+			<!--==========-->
+			<!--===============================-->
+			<!--== Schedule ===================-->
+			<!--===============================-->
+			<section id="schedule" class="row">
+				<div class="col-md-6 col-sm-12">
+					<h2>Wymagania</h2>
+					<ul>
+						<li>Dobrze jest mieć doświadczenie w pracy w branży IT i posługiwać 
+							się płynnie żargonem projektów IT. Jeżeli dopiero zaczynasz swoją 
+							karierę, będzie Ci bardzo ciężko zrozumieć wiele aspektów Event	
+							Stormingu, szczególnie w zakresie Design Level. Tu przyda się nawet 
+							doświadczenie w projektach prowadzonych zgodnie z DDD.</li>
+						<li><a href="https://1drv.ms/xs/s!AjEySs0anBSPgv9AggmWBzs5b9cLjA?wdFormId=%7BDD800324%2D2AFA%2D4802%2D81A1%2D7110964D3975%7D" target="_blank">Wypełniona ankieta</a> </li>
+					</ul>
+				</div>
+
+				<!-- <div class="col-md-6 col-sm-12">
+					<h2>Agenda</h2>
+					<ul>
+						<li>Wprowadzenie – pamięć procesu .NET</li>
+						<li>Alokacje – jakie są ich źródła, jak ich unikać i diagnozować</li>
+						<li>Garbage Collector
+							<ul>
+								<li>Trybu działania</li>
+								<li>Diagnostyka wycieków pamięci</li>
+							</ul>
+						</li>
+						<li>IDisposabable vs finalizacja</li>
+						<li>Span&lt;T&gt; i Memory&lt;T&gt;</li>
+					</ul>
+				</div> -->
+			</section>
+			<!--==========-->
+			<!--===============================-->
+			<!--== Speakers ===================-->
+			<!--===============================-->
+			<section id="speakers" class="row separated">
+				<div class="col-sm-12">
+					<div class="section-header text-center">
+						<h2>Prelegenci</h2>
+						<h4>Nasi wykładowcy ;)</h4>
+					</div>
+				</div>
+				<div class="col-sm-12">
+
+					<div class="speaker">
+
+							<div class="speaker-info">
+									<div class="speaker-photo">
+										<img src="/images/speakers/radek-maziarka.jpg" alt="Radosław Maziarka">
+									</div>
+									<div class="speaker-contacts">
+										<a href="https://radekmaziarka.pl" class="contact pull-left fa fa-globe"></a>
+										<a href="https://twitter.com/RadekMaziarka" class="contact pull-right fa fa-twitter"></a>
+									</div>
+								</div>
+								<h3><a href="/prelegenci/radek-maziarka/">Radosław Maziarka</a></h3>
+								<p>
+									Technology Development Manager, Team Leader i programista w obszarze .NET prowadzący wewnętrzne prezentacje i szkolenia, a także organizujący konferencję WROC# i webinarium programistyczne WROC# Online.
+								</p>
+								<p>
+									<a href="/prelegenci/radek-maziarka/">więcej...</a>
+								</p>
+							</div>
+
+						<div class="speaker">
+
+							<div class="speaker-info">
+								<div class="speaker-photo">
+									<img src="/images/speakers/wojciech-ptak.jpg" alt="Wojciech Ptak">
+								</div>
+							</div>
+							<h3><a href="/prelegenci/wojciech-ptak/">Wojciech Ptak</a></h3>
+							<p>Bezgraniczny fan freeride-owego wydania roweru, snowboard-u i nart. 
+								Zawodowo od lat wspierający inicjatywy zwinnych transformacji 
+								kultury organizacji w kierunku data-driven pracując z wieloma 
+								międzynarodowymi korporacjami.
+							</p>
+							<p>
+								<a href="/prelegenci/wojciech-ptak/">więcej...</a>
+							</p>
+						</div>
+
+				</div>
+			</section>
+			<!--==========-->
+			<!--===============================-->
+			<!--== FAQ ========================-->
+			<!--===============================-->
+			<section id="faq" class="row">
+				<div class="col-sm-12">
+					<div class="section-header text-right">
+						<h2>F.A.Q</h2>
+						<h4>To co chcielibyście wiedzieć a boicie się zapytać ;)</h4>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<p>
+						Jest to skrócona wersja FAQ, by przeczytać pełną i dowiedzieć się więcej o idei stojącej za devWarsztatami, zapraszamy na
+						stronę
+						<a href="/faq/">FAQ</a>.
+					</p>
+				</div>
+				<div class="col-sm-6">
+					<ul class="accordion-group">
+						<li class="accordion">
+							<a class="accordion-heading">
+								<h4 class="accordion-title">Czy to jest darmowy event ?</h4>
+								<span class="fa fa-plus-circle pull-right"></span>
+							</a>
+							<div class="accordion-body">
+								Tak! nie licząc obiadu, wszystko inne jest zorganizowane - zazwyczaj, chyba, że w opisie spotkania jest napisane inaczej,
+								czasami obiad może być sponsorowany.
+							</div>
+						</li>
+						<li class="accordion">
+							<a class="accordion-heading">
+								<h4 class="accordion-title">Czy mogę przyjść bez komputera ?</h4>
+								<span class="fa fa-plus-circle pull-right"></span>
+							</a>
+							<div class="accordion-body">
+								Tak, ale będziesz się trochę nudził. Większość sesji ma w sobie warsztaty, więc wtedy będziesz po prostu siedział i... pił
+								kawę? :)
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-6">
+					<ul class="accordion-group">
+						<li class="accordion">
+							<a class="accordion-heading">
+								<h4 class="accordion-title">Co muszę mieć ze zobą ?</h4>
+								<span class="fa fa-plus-circle pull-right"></span>
+							</a>
+							<div class="accordion-body">
+								To co jest napisane w opisie lub wysłane mailem. Ale przeważnie jest to komputer ;)
+							</div>
+						</li>
+						<li class="accordion">
+							<a class="accordion-heading">
+								<h4 class="accordion-title">Czy jakoś muszę skonfigurować swój komputer ?</h4>
+								<span class="fa fa-plus-circle pull-right"></span>
+							</a>
+							<div class="accordion-body">
+								Nie, ale fajnie jakbyś ściągnął odpowiednie narzędzia z maila który zostanie wysłany na kilka dni przed spotkaniem.
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!--==========-->
+			<!--===============================-->
+			<!--== Carousel ===================-->
+			<!--===============================-->
+			<section id="partners" class="row">
+				<div class="col-sm-12">
+					<div class="section-header text-center">
+						<h2>Sponsorzy</h2>
+						<h4>Gdyby nie oni, spotkanie nie doszłoby do skutku, dziękujemy.</h4>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div id="carousel" class="owl-carousel">
+						<div class="item" style="height: 55px; background: transparent">
+							<a href="https://techzooplus.com/" target="_blank"><img src="/images/sponsors/zooplus-logo.png" alt="zooplus"></a>
+						</div>
+						<div class="item" style="height: 55px; background: transparent">
+							<a href="http://www.enova365.pl/" target="_blank"><img src="/images/sponsors/enova365-logo.png" alt="enova 365"></a>
+						</div>
+						<div class="item" style="height: 55px; background: transparent">
+							<a href="http://jetbrains.com"  target="_blank"><img src="/images/sponsors/jetbrains-logo.png" alt="JetBrains"></a>
+						</div>
+						
+						<div class="item" style="height: 55px; background: transparent">
+							<a href="https://www.manning.com"  target="_blank"><img src="/images/sponsors/manning-logo.jpg" width="240" alt="Manning"></a>
+						</div>
+						<div class="item" style="height: 55px; background: transparent">
+							<a href="https://www.oreilly.com/"  target="_blank"><img src="/images/partners/orm-logo.png" width="240" alt="O'Reilly"></a>
+						</div>
+						<div class="item" style="height: 55px; background: transparent">
+							<a href="https://revdebug.com/"  target="_blank"><img src="/images/partners/rdb-logo.png" width="240" alt="RevDeBug"></a>
+						</div>
+					</div>
+					<div class="owl-carousel-navigation">
+						<a class="owl-btn prev fa fa-angle-left"></a>
+						<a class="owl-btn next fa fa-angle-right"></a>
+					</div>
+				</div>
+			</section>
+			<!--==========-->
+
+
+
+			<!--===============================-->
+			<!--== Pricing Tables =============-->
+			<!--===============================-->
+			<!-- <section id="prices" class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-left">
+							<h2>Pricing Tables</h2>
+							<h4>Awesome section description goes here.</h4>
+						</div>
+					</div>
+					<ul class="col-sm-3 pricing-features">
+						<li>Seat</li>
+						<li>Coffe Break</li>
+						<li>Certificate</li>
+					</ul>
+					<div class="col-md-3 col-sm-4">
+						<div class="pricing-table">
+							<h3 class="table-title">Silver</h3>
+							<div class="table-price">$99</div>
+							<ul class="table-features">
+								<li class="fa fa-check-circle"><span>Seat</span></li>
+								<li class="fa fa-minus-circle"><span>Coffe Break</span></li>
+								<li class="fa fa-minus-circle"><span>Certificate</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4">
+						<div class="pricing-table">
+							<h3 class="table-title">Gold</h3>
+							<div class="table-price">$199</div>
+							<ul class="table-features">
+								<li class="fa fa-check-circle"><span>Seat</span></li>
+								<li class="fa fa-check-circle"><span>Coffe Break</span></li>
+								<li class="fa fa-minus-circle"><span>Certificate</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4">
+						<div class="pricing-table">
+							<h3 class="table-title">Platinum</h3>
+							<div class="table-price">$299</div>
+							<ul class="table-features">
+								<li class="fa fa-check-circle"><span>Seat</span></li>
+								<li class="fa fa-check-circle"><span>Coffe Break</span></li>
+								<li class="fa fa-check-circle"><span>Certificate</span></li>
+							</ul>
+						</div>
+					</div>
+				</section> -->
+			<!--==========-->
+
+
+			<!--===============================-->
+			<!--== Register ===================-->
+			<!--===============================-->
+			<section id="register" class="row">
+				<div class="col-sm-12">
+					<div class="section-header text-center">
+						<h2>Rejestracja</h2>
+						<h4>Rejestracja na spotkanie poprzez portal
+							<a href="https://www.meetup.com/devWarsztaty/events/260972014/">Meetup</a>.</h4>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="form">
+						<div class="col-sm-12">
+							<input type="submit" value="Zarejestruj się" name="submit" id="register-btn">
+							<!-- <a href="https://www.meetup.com/devWarsztaty/events/260972014/"
+									class="btn-local btn-submit" role="button">
+									Zarejestruj się
+								</a> -->
+						</div>
+						</form>
+					</div>
+			</section>
+			<!--==========-->
+
+			<div id="gotop" class="gotop fa fa-arrow-up"></div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div id="map_canvas"></div>
+
+			<div class="footer">
+				<div class="container box">
+
+					<section id="info" class="row">
+						<div class="col-sm-8">
+
+							<!--== Social Icons ==-->
+							<ul class="social-icons">
+								<li>
+									<a href="https://facebook.com/devWarsztaty" title="Facebook Fan Page" class="fa fa-facebook"></a>
+								</li>
+								<li>
+									<a href="https://twitter.com/devWarsztaty" title="Twitter" class="fa fa-twitter"></a>
+								</li>
+								<li>
+									<a href="http://www.meetup.com/devWarsztaty/" title="Meetup Group" class="fa fa-users"></a>
+								</li>
+							</ul>
+
+						</div>
+						<div class="col-sm-4 text-right">
+							<div class="copyrights">
+								All Rights Reserved. ©
+								<a href="http://blog.gutek.pl">Jakub Gutkowski</a> 2016
+							</div>
+						</div>
+					</section>
+
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<!-- build:js -->
+		<script src="/js/jquery-2.1.0.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/js/jquery.scrollTo.js"></script>
+		<script src="/js/jquery.nav.js"></script>
+		<script src="/js/owl.carousel.min.js"></script>
+		<script src="/js/jquery.flexslider.js"></script>
+		<script src="/js/jquery.accordion.js"></script>
+		<script src="/js/jquery.placeholder.js"></script>
+		<script src="/js/jquery.fitvids.js"></script>
+		<script src="/js/gmap3.js"></script>
+		<script src="/js/fancySelect.js"></script>
+		<script src="/js/main.js"></script>
+		<!-- endbuild -->
+		<script>
+			var venueAddress = 'zooplus, Prądnicka 20A, Kraków, Polska'; // Venue
+			$('#register-btn').click(function (evt) {
+				evt.preventDefault();
+				window.location = 'https://www.meetup.com/devWarsztaty/events/260972014/';
+			});
+
+			$('#goregister').click(function (evt) {
+				evt.preventDefault();
+				window.location = 'https://www.meetup.com/devWarsztaty/events/260972014/';
+			});
+
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date(); a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-4831504-10', 'auto');
+			ga('send', 'pageview');
+
+		</script>
+</body>
+
+</html>
