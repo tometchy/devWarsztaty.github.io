@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>devWarsztaty - Budowanie nowoczesnych aplikacji .NET Core</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <meta
+      name="description"
+      content=".NET Core jest dynamicznie rozwijącą się platformą służącą m. in. do budowania aplikacji serwerowych, mobilnych, a nawet przeglądarkowych. Dzięki upublicznieniu kodu źródłowego całość jest rozwijana nie tylko przez Microsoft, ale przede wszystkim przez światową społeczność."
+    />
+
+    <meta property="og:image" content="" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Budowanie nowoczesnych aplikacji .NET Core"
+    />
+    <meta
+      property="og:description"
+      content=".NET Core jest dynamicznie rozwijącą się platformą służącą m. in. do budowania aplikacji serwerowych, mobilnych, a nawet przeglądarkowych. Dzięki upublicznieniu kodu źródłowego całość jest rozwijana nie tylko przez Microsoft, ale przede wszystkim przez światową społeczność."
+    />
+    <meta
+      property="og:url"
+      content="http://devWarsztaty.pl/warsztaty/2019-06-15"
+    />
+    <meta property="og:site_name" content="devWarsztaty" />
+    <meta
+      property="article:publisher"
+      content="https://www.facebook.com/devWarsztaty"
+    />
+    <meta property="fb:admins" content="1077660901" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:description"
+      content=".NET Core jest dynamicznie rozwijącą się platformą służącą m. in. do budowania aplikacji serwerowych, mobilnych, a nawet przeglądarkowych. Dzięki upublicznieniu kodu źródłowego całość jest rozwijana nie tylko przez Microsoft, ale przede wszystkim przez światową społeczność."
+    />
+    <meta
+      name="twitter:title"
+      content="Budowanie nowoczesnych aplikacji .NET Core"
+    />
+    <meta name="twitter:site" content="@devWarsztaty" />
+    <meta name="twitter:creator" content="@devWarsztaty" />
+    <meta name="twitter:domain" content="devWarsztaty" />
+    <meta name="twitter:image:src" content="" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon-180x180.png"
+    />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- build:css -->
+    <link href="/css/bootstrap.css" rel="stylesheet" media="screen" />
+    <link href="/css/style.css" rel="stylesheet" media="screen" />
+    <link href="/css/animate.min.css" rel="stylesheet" media="screen" />
+    <link href="/css/font-awesome.css" rel="stylesheet" media="screen" />
+    <link href="/css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="/css/flexslider.css" rel="stylesheet" media="screen" />
+    <link href="/css/fancySelect.css" rel="stylesheet" media="screen" />
+    <link href="/css/responsive.css" rel="stylesheet" media="screen" />
+    <!-- endbuild -->
+
+    <!--== Google Fonts ==-->
+    <link
+      href="//fonts.googleapis.com/css?family=Open+Sans:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//fonts.googleapis.com/css?family=Belgrano"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="canonical" href="http://devWarsztaty.pl/warsztaty/2019-06-15" />
+  </head>
+
+  <body>
+    <header id="header">
+      <div id="menu" class="header-menu fixed">
+        <div class="container box">
+          <div class="row">
+            <nav role="navigation" class="col-sm-12">
+              <div class="navbar-header">
+                <button
+                  type="button"
+                  class="navbar-toggle collapsed"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                >
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+
+                <!--== Logo ==-->
+                <span class="navbar-brand logo">
+                  <span class="fa fa-map-marker"></span>devWarsztaty
+                </span>
+              </div>
+              <div class="navbar-collapse collapse">
+                <!--== Navigation Menu ==-->
+                <ul class="nav navbar-nav">
+                  <li class="current"><a href="#header">Home</a></li>
+                  <li><a href="#about">About worshop</a></li>
+                  <!-- <li><a href="#schedule">Agenda</a></li> -->
+                  <li><a href="#speakers">Speakers</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                  <li><a href="#partners">Sponsors</a></li>
+                  <li><a href="#register">Registration!</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!--== Site Description ==-->
+      <div class="header-cta">
+        <div class="container">
+          <div class="row">
+            <div class="blk">
+              <h1>Budowanie nowoczesnych aplikacji .NET Core</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="blk">
+              <input
+                type="submit"
+                value="Register"
+                name="submit"
+                id="goregister"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bg">
+        <div id="preloader">
+          <div class="preloader"></div>
+        </div>
+        <div class="main-slider" id="main-slider">
+          <!--== Main Slider ==-->
+          <ul class="slides">
+            <li><img src="/images/bg01.jpg" alt="Slide Image" /></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="container box">
+        <!--===============================-->
+        <!--== Features ===================-->
+        <!--===============================-->
+        <section id="features" class="row">
+          <div class="col-md-3 col-xs-6">
+            <div class="event-info">
+              <div class="icon fa fa-map-marker"></div>
+              <div class="info">
+                <h3>Warszawa</h3>
+                <span>Starberry<br />Grochowska 306/308</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="event-info">
+              <div class="icon fa fa-calendar"></div>
+              <div class="info">
+                <h3>15 czerwca</h3>
+                <span>2019</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="event-info">
+              <div class="icon fa fa-microphone"></div>
+              <div class="info">
+                <h3>Kamil Kiełbasa & Grzegorz Kowalski</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="event-info">
+              <div class="icon fa fa-users"></div>
+              <div class="info">
+                <h3>18 miejsc</h3>
+                <span>pośpiesz się</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--==========-->
+
+        <!--===============================-->
+        <!--== About  =====================-->
+        <!--===============================-->
+        <section id="about" class="row">
+          <div class="col-sm-12">
+            <div class="section-header text-left">
+              <h2>Budowanie nowoczesnych aplikacji .NET Core</h2>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <p>
+              .NET Core jest dynamicznie rozwijącą się platformą służącą m. in.
+              do budowania aplikacji serwerowych, mobilnych, a nawet
+              przeglądarkowych. Dzięki upublicznieniu kodu źródłowego całość
+              jest rozwijana nie tylko przez Microsoft, ale przede wszystkim
+              przez światową społeczność.
+            </p>
+            <h3>Czego się nauczysz?</h3>
+            <p>
+              Na warsztacie stworzymy nowoczesny serwer za pomocą .NET Core MVC.
+              Poznamy trochę historii powstawania .NET Core, różnic pomiędzy
+              .NET Frameworkiem i kierunek, w jakim platforma będzie się
+              rozwijać. Zbudujemy API zabezpieczone za pomocą token-ów JWT.
+              Zaimplementujemy komunikację real-time za pomocą biblioteki
+              SignalR. Na koniec rozproszymy całą aplikację za pomocą szyny
+              wiadomości RabbitMQ.
+            </p>
+            <h3>
+              Dla kogo jest ten warsztat?
+            </h3>
+            <p>
+              Warsztat jest przeznaczony dla programistów ze znajomością C# w
+              zakresie podstawowym lub z doświadczeniem w innych językach
+              obiektowych np. Java. Znajomość platformy .NET nie jest wymagana,
+              jednak będzie pomocna.
+            </p>
+            <h3>Program Warsztatów</h3>
+            <ol>
+              <li>Wprowadzenie do platformy .NET Core.</li>
+              <li>Różnice pomiędzy .NET Core a .NET Framework</li>
+              <li>
+                Tworzenie API za pomocą .NET Core MVC
+                <ul>
+                  <li>Wzorzec MVC</li>
+                  <li>Dependency Injection</li>
+                  <li>Middleware</li>
+                  <li>Routing</li>
+                </ul>
+              </li>
+              <li>
+                Uwierzytelnianie API
+                <ul>
+                  <li>Sposoby uwierzytelnienia API</li>
+                  <li>Omówienie token-ów JWT</li>
+                  <li>Autoryzacja</li>
+                </ul>
+              </li>
+              <li>
+                Komunikacja RealTime za pomocą SignalR
+                <ul>
+                  <li>
+                    Sposoby komunikacji Real Time (Long Polling, Server Sent
+                    Events, WebSocket)
+                  </li>
+                  <li>Wprowadzenie do biblioteki SignalR</li>
+                  <li>Autoryzacja połączenia WebSocket</li>
+                </ul>
+              </li>
+              <li>Rozproszenie aplikacji za pomocą RabbitMQ</li>
+            </ol>
+          </div>
+          <div class="col-sm-12">
+            <br />
+            <p>
+              <strong>Uwaga</strong>: będzie zrzutka na pizze, bo nie mamy
+              sponsora spotkania
+            </p>
+            <p>
+              <strong>Uwaga 2:</strong>
+              <br />
+              Nie ma blokowania miejsc. Jeżeli nie wiesz czy będziesz mógł
+              przyjść NIE BLOKUJ miejsca. Niestety wiele razy zdarzyło się nam,
+              że część osób nie przyszła na warsztaty lub zwalniała miejsce w
+              dzień warsztatów (!). Nie możemy dopuścić do takich sytuacji,
+              warsztaty mają formę bezpłatną, ale wymagamy w zamian szacunku i
+              zaangażowania. Tym razem będziemy zwracać uwagę na tego typu
+              zagrywki i następnym razem po prostu daną osobę rejestrującą się z
+              miejsca wrzucimy na waiting list.
+              <br />
+            </p>
+          </div>
+        </section>
+        <!--==========-->
+
+        <!--===============================-->
+        <!--== Schedule ===================-->
+        <!--===============================-->
+        <section id="schedule" class="row">
+          <div class="col-md-12 col-sm-12">
+            <h2>Wymagania</h2>
+            <ol>
+              <li>
+                BYOD (własny sprzęt, system dowolny, spełniający pozostałe
+                wymagania)
+              </li>
+              <li>
+                Przejście strony z wymaganiami:
+                <a
+                  href="http://dotnet-core.linecode.pl/enviroment/#oprogramowanie"
+                  >http://dotnet-core.linecode.pl/enviroment/#oprogramowanie</a
+                >
+              </li>
+            </ol>
+          </div>
+        </section>
+        <!--==========-->
+
+        <!--===============================-->
+        <!--== Speakers ===================-->
+        <!--===============================-->
+        <section id="speakers" class="row separated">
+          <div class="col-sm-12">
+            <div class="section-header text-center">
+              <h2>Prelegenci</h2>
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <div class="speaker">
+              <div class="speaker-info">
+                <div class="speaker-photo">
+                  <img
+                    src="/images/speakers/k_kielbasa.jpg"
+                    alt="Kamil Kiełbasa"
+                  />
+                </div>
+              </div>
+              <h3>
+                Kamil Kiełbasa
+              </h3>
+              <p>
+                Programista, Architekt z ponad 8 letnim doświadczeniem w branży
+                IT. Pracował zarówno jako Front-end jak i Back-end developer.
+                Nie obce mu też tematy DevOps-owe. Obecnie programuje przy
+                użyciu .NET Core, Vue.js, MongoDB, Docker oraz RabbitMQ. Wielki
+                fan cloud computing, mikroserwisów, rozproszonych architektów i
+                baz NoSQL. Po pracy, oprócz gier komputerowych i grania na
+                gitarze, prowadzi bloga <a href="http://bd90.pl">bd90.pl</a>
+              </p>
+            </div>
+            <div class="speaker">
+              <div class="speaker-info">
+                <div class="speaker-photo">
+                  <img
+                    src="/images/speakers/G_Kowalski.jpg"
+                    alt="Grzegorz Kowalski"
+                  />
+                </div>
+                <div class="speaker-contacts"></div>
+              </div>
+              <h3>
+                Grzegorz Kowalski
+              </h3>
+              <p>
+                Fulstack Web Developer C#/JS, Team leader, Trener. Przeszedł
+                długą drogę od webmastera w lokalnej gazecie po lidera zespołu
+                developerskiego w dużym portalu informacyjnym. Na co dzień
+                walczy zarówno z historią .NET-a (ASP.NET Web Forms), jak i
+                przyszłością (.NET Core). Dobrze się czuje w technologiach
+                Front-end takich jak React, Phaser.io czy SASS. Fan gamedev-u,
+                podróży, miłośnik zwierząt i adept sztuk walki.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--==========-->
+
+        <!--===============================-->
+        <!--== FAQ ========================-->
+        <!--===============================-->
+        <section id="faq" class="row">
+          <div class="col-sm-12">
+            <div class="section-header text-right">
+              <h2>F.A.Q</h2>
+              <h4>To co chcielibyście wiedzieć a boicie się zapytać ;)</h4>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <p>
+              Jest to skrócona wersja FAQ, by przeczytać pełną i dowiedzieć się
+              więcej o idei stojącej za devWarsztatami, zapraszamy na stronę
+              <a href="/faq/">FAQ</a>.
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <ul class="accordion-group">
+              <li class="accordion">
+                <a class="accordion-heading">
+                  <h4 class="accordion-title">Czy to jest darmowy event?</h4>
+                  <span class="fa fa-plus-circle pull-right"></span>
+                </a>
+                <div class="accordion-body">
+                  Tak! nie licząc obiadu i piwa, wszystko inne jest
+                  zorganizowane - zazwyczaj, chyba, że w opisie spotkania jest
+                  napisane inaczej, czasami obiad może być sponsorowany, a
+                  czasami może nawet i piwo.
+                </div>
+              </li>
+              <li class="accordion">
+                <a class="accordion-heading">
+                  <h4 class="accordion-title">
+                    Czy mogę przyjść bez komputera?
+                  </h4>
+                  <span class="fa fa-plus-circle pull-right"></span>
+                </a>
+                <div class="accordion-body">
+                  Tak, ale będziesz się trochę nudził. Większość sesji ma w
+                  sobie warsztaty, więc wtedy będziesz po prostu siedział i...
+                  pił kawę? :)
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul class="accordion-group">
+              <li class="accordion">
+                <a class="accordion-heading">
+                  <h4 class="accordion-title">Co muszę mieć ze zobą?</h4>
+                  <span class="fa fa-plus-circle pull-right"></span>
+                </a>
+                <div class="accordion-body">
+                  Komputer, plus potwierdzenie rejestracji.
+                </div>
+              </li>
+              <li class="accordion">
+                <a class="accordion-heading">
+                  <h4 class="accordion-title">
+                    Czy jakoś muszę skonfigurować swój komputer?
+                  </h4>
+                  <span class="fa fa-plus-circle pull-right"></span>
+                </a>
+                <div class="accordion-body">
+                  Nie, ale fajnie jakbyś ściągnął odpowiednie narzędzia z maila
+                  który zostanie wysłany na kilka dni przed spotkaniem.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--==========-->
+
+        <!--===============================-->
+        <!--== Carousel ===================-->
+        <!--===============================-->
+        <!--===============================-->
+        <!--== Carousel ===================-->
+        <!--===============================-->
+        <section id="partners" class="row">
+          <div class="col-sm-12">
+            <div class="section-header text-center">
+              <h2>Sponsorzy</h2>
+              <h4>
+                Gdyby nie oni, spotkanie nie doszłoby do skutku, dziękujemy.
+              </h4>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div id="carousel" class="owl-carousel">
+              <div class="item" style="height: 55px; background: transparent">
+                <a href="https://www.manning.com" target="_blank"
+                  ><img
+                    src="/images/sponsors/skyrise.jpg"
+                    width="240"
+                    alt="Manning"
+                /></a>
+              </div>
+              <div class="item" style="height: 55px; background: transparent">
+                <a href="http://jetbrains.com" target="_blank"
+                  ><img
+                    src="/images/sponsors/jetbrains-logo.png"
+                    alt="JetBrains"
+                /></a>
+              </div>
+              <div class="item" style="height: 55px; background: transparent">
+                <a href="https://www.manning.com" target="_blank"
+                  ><img
+                    src="/images/sponsors/manning-logo.jpg"
+                    width="240"
+                    alt="Manning"
+                /></a>
+              </div>
+            </div>
+            <div class="owl-carousel-navigation">
+              <a class="owl-btn prev fa fa-angle-left"></a>
+              <a class="owl-btn next fa fa-angle-right"></a>
+            </div>
+          </div>
+        </section>
+        <!--===============================-->
+        <!--== Register ===================-->
+        <!--===============================-->
+        <section id="register" class="row">
+          <div class="col-sm-12">
+            <div class="section-header text-center">
+              <h2>Registration</h2>
+              <h4>
+                Register on
+                <a href="https://www.meetup.com/devWarsztaty/events/262057829/"
+                  >Meetup</a
+                >.
+              </h4>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="form">
+              <div class="col-sm-12">
+                <input
+                  type="submit"
+                  value="Register!"
+                  name="submit"
+                  id="register-btn"
+                />
+                <!-- <a href="https://www.meetup.com/devWarsztaty/events/236972265/"
+									class="btn-local btn-submit" role="button">
+									Zarejestruj się
+								</a> -->
+              </div>
+            </div>
+          </div>
+          <div id="gotop" class="gotop fa fa-arrow-up"></div>
+        </section>
+      </div>
+    </div>
+    <footer id="footer">
+      <div id="map_canvas"></div>
+
+      <div class="footer">
+        <div class="container box">
+          <section id="info" class="row">
+            <div class="col-sm-8">
+              <!--== Social Icons ==-->
+              <ul class="social-icons">
+                <li>
+                  <a
+                    href="https://facebook.com/devWarsztaty"
+                    title="Facebook Fan Page"
+                    class="fa fa-facebook"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/devWarsztaty"
+                    title="Twitter"
+                    class="fa fa-twitter"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="http://www.meetup.com/devWarsztaty/"
+                    title="Meetup Group"
+                    class="fa fa-users"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-4 text-right">
+              <div class="copyrights">
+                All Rights Reserved. ©
+                <a href="http://devWarsztaty.pl">devWarsztaty</a> 2019
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <!-- build:js -->
+    <script src="/js/jquery-2.1.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.scrollTo.js"></script>
+    <script src="/js/jquery.nav.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/jquery.flexslider.js"></script>
+    <script src="/js/jquery.accordion.js"></script>
+    <script src="/js/jquery.placeholder.js"></script>
+    <script src="/js/jquery.fitvids.js"></script>
+    <script src="/js/gmap3.js"></script>
+    <script src="/js/fancySelect.js"></script>
+    <script src="/js/main.js"></script>
+    <!-- endbuild -->
+    <script>
+      var venueAddress =
+        "Starberry, Grochowska 306/308, 03-840 Warszawa, Poland"; // Venue
+
+      $("#register-btn").click(function(evt) {
+        evt.preventDefault();
+        window.location =
+          "https://www.meetup.com/devWarsztaty/events/262057829/";
+      });
+
+      $("#goregister").click(function(evt) {
+        evt.preventDefault();
+        window.location =
+          "https://www.meetup.com/devWarsztaty/events/262057829/";
+      });
+
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-4831504-10", "auto");
+      ga("send", "pageview");
+    </script>
+  </body>
+</html>
