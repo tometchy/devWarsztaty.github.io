@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>devWarsztaty - Event Storming - Śmiało  tam, gdzie nie dotarł jeszcze żaden człowiek.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <meta
+      name="description"
+      content="Event Storming - Śmiało dąż tam, gdzie nie dotarł jeszcze żaden człowiek."
+    />
+
+    <meta property="og:image" content="" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Event Storming - Śmiało dąż tam, gdzie nie dotarł jeszcze żaden człowiek."
+    />
+    <meta
+      property="og:description"
+      content="Event Storming - Śmiało dąż tam, gdzie nie dotarł jeszcze żaden człowiek."
+    />
+    <meta
+      property="og:url"
+      content="http://devWarsztaty.pl/warsztaty/2019-07-06"
+    />
+    <meta property="og:site_name" content="devWarsztaty" />
+    <meta
+      property="article:publisher"
+      content="https://www.facebook.com/devWarsztaty"
+    />
+    <meta property="fb:admins" content="1077660901" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:description"
+      content="Event Storming - Śmiało dąż tam, gdzie nie dotarł jeszcze żaden człowiek."
+    />
+    <meta
+      name="twitter:title"
+      content="Event Storming - Śmiało dąż tam, gdzie nie dotarł jeszcze żaden człowiek."
+    />
+    <meta name="twitter:site" content="@devWarsztaty" />
+    <meta name="twitter:creator" content="@devWarsztaty" />
+    <meta name="twitter:domain" content="devWarsztaty" />
+    <meta name="twitter:image:src" content="" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon-180x180.png"
+    />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- build:css -->
+    <link href="/css/bootstrap.css" rel="stylesheet" media="screen" />
+    <link href="/css/style.css" rel="stylesheet" media="screen" />
+    <link href="/css/animate.min.css" rel="stylesheet" media="screen" />
+    <link href="/css/font-awesome.css" rel="stylesheet" media="screen" />
+    <link href="/css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="/css/flexslider.css" rel="stylesheet" media="screen" />
+    <link href="/css/fancySelect.css" rel="stylesheet" media="screen" />
+    <link href="/css/responsive.css" rel="stylesheet" media="screen" />
+    <!-- endbuild -->
+
+    <!--== Google Fonts ==-->
+    <link
+      href="//fonts.googleapis.com/css?family=Open+Sans:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//fonts.googleapis.com/css?family=Belgrano"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="canonical" href="http://devWarsztaty.pl/warsztaty/2019-07-06" />
+  </head>
+
+  <body>
+    <header id="header">
+      <div id="menu" class="header-menu fixed">
+        <div class="container box">
+          <div class="row">
+            <nav role="navigation" class="col-sm-12">
+              <div class="navbar-header">
+                <button
+                  type="button"
+                  class="navbar-toggle collapsed"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                >
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+
+                <!--== Logo ==-->
+                <span class="navbar-brand logo">
+                  <span class="fa fa-map-marker"></span>devWarsztaty
+                </span>
+              </div>
+              <div class="navbar-collapse collapse">
+                <!--== Navigation Menu ==-->
+                <ul class="nav navbar-nav">
+                  <li class="current"><a href="#header">Home</a></li>
+                  <li><a href="#about">About worshop</a></li>
+                  <!-- <li><a href="#schedule">Agenda</a></li> -->
+                  <li><a href="#speakers">Speakers</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                  <li><a href="#partners">Sponsors</a></li>
+                  <li><a href="#register">Registration!</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!--== Site Description ==-->
+      <div class="header-cta">
+        <div class="container">
+          <div class="row">
+            <div class="blk">
+              <h1>Event Storming - Śmiało dąż tam, gdzie nie dotarł jeszcze żaden człowiek.</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="blk">
+              <input
+                type="submit"
+                value="Register"
+                name="submit"
+                id="goregister"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bg">
+        <div id="preloader">
+          <div class="preloader"></div>
+        </div>
+        <div class="main-slider" id="main-slider">
+          <!--== Main Slider ==-->
+          <ul class="slides">
+            <li><img src="/images/bg01.jpg" alt="Slide Image" /></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="container box">
+        <!--===============================-->
+        <!--== Features ===================-->
+        <!--===============================-->
+        <section id="features" class="row">
+          <div class="col-md-3 col-xs-6">
+            <div class="event-info">
+              <div class="icon fa fa-map-marker"></div>
+              <div class="info">
+                <h3>Wrocław</h3>
+                <span>PGS Software S.A.<br /> Sucha 2</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="event-info">
+              <div class="icon fa fa-calendar"></div>
+              <div class="info">
+                <h3>6 lipca</h3>
+                <span>2019</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="event-info">
+              <div class="icon fa fa-microphone"></div>
+              <div class="info">
+                <h3>Krzysztof Owisiany & Mikołaj Jakubowski</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <div class="event-info">
+              <div class="icon fa fa-users"></div>
+              <div class="info">
+                <h3>20 miejsc</h3>
+                <span>pośpiesz się</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--==========-->
+
+        <!--===============================-->
+        <!--== About  =====================-->
+        <!--===============================-->
+        <section id="about" class="row">
+          <div class="col-sm-12">
+            <div class="section-header text-left">
+              <h2>Event Storming - Śmiało dąż tam, gdzie nie dotarł jeszcze żaden człowiek.</h2>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <h3>I. Event Storming - BigPicture - na początku była strategia.</h3>
+            <p>Jak przeprowadzić pierwszą część Event Stormingu o nazwie BigPicture. Ta część jest też określana strategiczną w nawiązaniu do DDD.
+             
+            W czasie warsztatu przejdziemy przez 7 faz BigPicture. Efektem tego będzie powstanie całościowego obrazu procesu/problemu, jaki będziemy rozważać.
+             
+            Będziemy prowadzić dyskusje, kleić karteczki. Odbędziemy podróż w czasie w celu odkrycia domeny.
+             
+            Uczestnik po warsztacie powinien mieć wiedzę i umiejętności, jak przeprowadzić BigPicture we własnym środowisku/grupie.</p>
+                          
+            <h3>II. Event Storming - DesignLevel - po strategii pora na taktykę.</h3>             
+            <p>Nurkowanie głębiej w domenę jest to tak zwana taktyczna część Event Storming o nazwie DesignLevel.
+             
+            Efektem będzie możliwość przejścia do implementacji w ukochanym języku programowania.
+
+            Podzielimy uczestników na grupy, w których będą pracować.
+             
+            Dzięki tak głębokiemu nurkowaniu będzie można dostrzec samo sedno domeny, nad jaką będziemy pracować.
+             
+            Podobnie jak przy pierwszej części warsztatu. Po ukończeniu uczestnik powinien posiąść wiedzę umożliwiającą poprowadzenie ludzi w nieznany świat.</p>
+                  
+          </div>
+        </section>
+        <!--==========-->
+
+        <!--===============================-->
+        <!--== Schedule ===================-->
+        <!--===============================-->
+        <section id="schedule" class="row">
+          <div class="col-md-12 col-sm-12">
+            <h2>Wymagania</h2>
+            <ul>                        
+              <li>otwarty umysł</li>
+              <li>wypoczęte nogi :)</li>
+              <li>dobry humor</li>
+              <li>zaangażowanie</li>
+              <li>pozytywne nastawienie.</li>
+            </ul>
+          </div>
+        </section>
+        <!--==========-->
+
+        <!--===============================-->
+        <!--== Speakers ===================-->
+        <!--===============================-->
+        <section id="speakers" class="row separated">
+          <div class="col-sm-12">
+            <div class="section-header text-center">
+              <h2>Prelegenci</h2>
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <div class="speaker">
+              <div class="speaker-info">
+                <div class="speaker-photo">
+                  <img
+                    src="/images/speakers/krzysztof-owsiany.jpg"
+                    alt="Krzysztof Owsiany"
+                  />
+                  <div class="speaker-contacts">
+                    <a href="https://twitter.com/gemu_gocom" target="_blank" class="contact pull-right fa fa-twitter"></a>
+                    <a href="http://gemustudio.com" target="_blank" class="contact pull-left fa fa-globe"></a>
+                  </div>  
+                </div>
+              </div>
+              <h3>
+                <a href="/prelegenci/krzysztof-owsiany/">Krzysztof Owsiany</a>
+              </h3>
+              <p>
+                Programuję od dziecka (94 r.), przez te lata miałem styczność z wieloma technologiami, rozwijałem się przede wszystkim samodzielnie.
+              </p>
+            </div>
+            <div class="speaker">
+              <div class="speaker-info">
+                <div class="speaker-photo">
+                  <img
+                    src="/images/speakers/mikolaj_jakubowski.jpg"
+                    alt="Mikołaj Jakubowski"
+                  />
+                  <div class="speaker-contacts">
+                    <a href="https://twitter.com/blazestudio_art" target="_blank" class="contact pull-right fa fa-twitter"></a>                  
+                  </div>  
+                </div>
+              </div>
+              <h3>
+                <a href="/prelegenci/mikolaj-jakubowski/">Mikołaj Jakubowski</a>
+              </h3>
+              <p>
+                W skrócie programista-artysta. Programuję od 8 lat. Swoją przygodę zacząłem z językiem PHP, w którym do dziś co nieco robię. 
+              </p>
+            </div>
+          </div>          
+        </section>
+        <!--==========-->
+
+        <!--===============================-->
+        <!--== FAQ ========================-->
+        <!--===============================-->
+        <section id="faq" class="row">
+          <div class="col-sm-12">
+            <div class="section-header text-right">
+              <h2>F.A.Q</h2>
+              <h4>To co chcielibyście wiedzieć a boicie się zapytać ;)</h4>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <p>
+              Jest to skrócona wersja FAQ, by przeczytać pełną i dowiedzieć się
+              więcej o idei stojącej za devWarsztatami, zapraszamy na stronę
+              <a href="/faq/">FAQ</a>.
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <ul class="accordion-group">
+              <li class="accordion">
+                <a class="accordion-heading">
+                  <h4 class="accordion-title">Czy to jest darmowy event?</h4>
+                  <span class="fa fa-plus-circle pull-right"></span>
+                </a>
+                <div class="accordion-body">
+                  Tak! nie licząc obiadu i piwa, wszystko inne jest
+                  zorganizowane - zazwyczaj, chyba, że w opisie spotkania jest
+                  napisane inaczej, czasami obiad może być sponsorowany, a
+                  czasami może nawet i piwo.
+                </div>
+              </li>
+              <li class="accordion">
+                <a class="accordion-heading">
+                  <h4 class="accordion-title">
+                    Czy mogę przyjść bez komputera?
+                  </h4>
+                  <span class="fa fa-plus-circle pull-right"></span>
+                </a>
+                <div class="accordion-body">
+                  Tak, akurat przy tym warsztacie komputer nie jest potrzebny.
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul class="accordion-group">
+              <li class="accordion">
+                <a class="accordion-heading">
+                  <h4 class="accordion-title">Co muszę mieć ze zobą?</h4>
+                  <span class="fa fa-plus-circle pull-right"></span>
+                </a>
+                <div class="accordion-body">
+                  otwarty umysł
+                </div>
+              </li>
+              <li class="accordion">
+                <a class="accordion-heading">
+                  <h4 class="accordion-title">
+                    Czy jakoś muszę skonfigurować swój komputer?
+                  </h4>
+                  <span class="fa fa-plus-circle pull-right"></span>
+                </a>
+                <div class="accordion-body">
+                  Nie, ale fajnie jakbyś ściągnął odpowiednie narzędzia z maila
+                  który zostanie wysłany na kilka dni przed spotkaniem.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--==========-->
+
+        <!--===============================-->
+        <!--== Carousel ===================-->
+        <!--===============================-->
+        <!--===============================-->
+        <!--== Carousel ===================-->
+        <!--===============================-->
+        <section id="partners" class="row">
+          <div class="col-sm-12">
+            <div class="section-header text-center">
+              <h2>Sponsorzy</h2>
+              <h4>
+                Gdyby nie oni, spotkanie nie doszłoby do skutku, dziękujemy.
+              </h4>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div id="carousel" class="owl-carousel">
+              <div class="item" style="height: 55px; background: transparent">
+                <a href="https://www.manning.com" target="_blank"
+                  ><img
+                    src="/images/sponsors/skyrise.jpg"
+                    width="240"
+                    alt="Manning"
+                /></a>
+              </div>
+              <div class="item" style="height: 55px; background: transparent">
+                <a href="http://jetbrains.com" target="_blank"
+                  ><img
+                    src="/images/sponsors/jetbrains-logo.png"
+                    alt="JetBrains"
+                /></a>
+              </div>
+              <div class="item" style="height: 55px; background: transparent">
+                <a href="https://www.manning.com" target="_blank"
+                  ><img
+                    src="/images/sponsors/manning-logo.jpg"
+                    width="240"
+                    alt="Manning"
+                /></a>
+              </div>
+            </div>
+            <div class="owl-carousel-navigation">
+              <a class="owl-btn prev fa fa-angle-left"></a>
+              <a class="owl-btn next fa fa-angle-right"></a>
+            </div>
+          </div>
+        </section>
+        <!--===============================-->
+        <!--== Register ===================-->
+        <!--===============================-->
+        <section id="register" class="row">
+          <div class="col-sm-12">
+            <div class="section-header text-center">
+              <h2>Registration</h2>
+              <h4>
+                Register on
+                <a href="https://www.meetup.com/devWarsztaty/events/262227230/"
+                  >Meetup</a
+                >.
+              </h4>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="form">
+              <div class="col-sm-12">
+                <input
+                  type="submit"
+                  value="Register!"
+                  name="submit"
+                  id="register-btn"
+                />
+                <!-- <a href="https://www.meetup.com/devWarsztaty/events/236972265/"
+									class="btn-local btn-submit" role="button">
+									Zarejestruj się
+								</a> -->
+              </div>
+            </div>
+          </div>
+          <div id="gotop" class="gotop fa fa-arrow-up"></div>
+        </section>
+      </div>
+    </div>
+    <footer id="footer">
+      <div id="map_canvas"></div>
+
+      <div class="footer">
+        <div class="container box">
+          <section id="info" class="row">
+            <div class="col-sm-8">
+              <!--== Social Icons ==-->
+              <ul class="social-icons">
+                <li>
+                  <a
+                    href="https://facebook.com/devWarsztaty"
+                    title="Facebook Fan Page"
+                    class="fa fa-facebook"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/devWarsztaty"
+                    title="Twitter"
+                    class="fa fa-twitter"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="http://www.meetup.com/devWarsztaty/"
+                    title="Meetup Group"
+                    class="fa fa-users"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-4 text-right">
+              <div class="copyrights">
+                All Rights Reserved. ©
+                <a href="http://devWarsztaty.pl">devWarsztaty</a> 2019
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <!-- build:js -->
+    <script src="/js/jquery-2.1.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.scrollTo.js"></script>
+    <script src="/js/jquery.nav.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/jquery.flexslider.js"></script>
+    <script src="/js/jquery.accordion.js"></script>
+    <script src="/js/jquery.placeholder.js"></script>
+    <script src="/js/jquery.fitvids.js"></script>
+    <script src="/js/gmap3.js"></script>
+    <script src="/js/fancySelect.js"></script>
+    <script src="/js/main.js"></script>
+    <!-- endbuild -->
+    <script>
+      var venueAddress =
+        "PGS Software S.A. ul. Sucha 2, Wrocław"; // Venue
+
+      $("#register-btn").click(function(evt) {
+        evt.preventDefault();
+        window.location =
+          "https://www.meetup.com/devWarsztaty/events/262227230/";
+      });
+
+      $("#goregister").click(function(evt) {
+        evt.preventDefault();
+        window.location =
+          "https://www.meetup.com/devWarsztaty/events/262227230/";
+      });
+
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-4831504-10", "auto");
+      ga("send", "pageview");
+    </script>
+  </body>
+</html>
